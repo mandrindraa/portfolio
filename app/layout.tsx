@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Mandrindra Antonnio - Network & Backend Developer",
+  title: "Alex Chen - Network & Backend Developer",
   description:
     "Computer Networks student specializing in backend development and DevOps. Passionate about building scalable systems and network infrastructure.",
   generator: "v0.app",
