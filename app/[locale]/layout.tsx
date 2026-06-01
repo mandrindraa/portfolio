@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 import type React from "react";
 import "../globals.css";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n.config";
+import portfolioData from "@/data/portfolio.json";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -30,11 +32,12 @@ export async function generateMetadata({
     notFound();
   }
 
-  const t = await getTranslations({ locale, namespace: "metadata" });
+  const personal = portfolioData.personal;
+  const translation = personal.translations[locale as keyof typeof personal.translations] || personal.translations.en;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: `${personal.name} - ${translation.title} ${translation.titleHighlight}`,
+    description: translation.description,
     generator: "v0.app",
   };
 }
@@ -43,27 +46,33 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
     <html
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${dmSans.variable} antialiased`}
+      lang={locale}
     >
       <body className="font-sans">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

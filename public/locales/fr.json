@@ -1,6 +1,5 @@
 {
   "navigation": {
-    "name": "Mandrindra Antonnio R.",
     "about": "À propos",
     "projects": "Projets",
     "skills": "Compétences",
@@ -8,32 +7,11 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Développeur Réseau &",
-    "titleHighlight": "Backend",
-    "description": "Étudiant en Réseaux Informatiques passionné par la construction de systèmes backend scalables, d'infrastructures réseau et d'automatisation DevOps. Je recherche actuellement des opportunités pour appliquer mes compétences techniques dans des projets réels.",
     "viewWork": "Voir mon travail",
     "getInTouch": "Me contacter"
   },
   "about": {
-    "title": "À propos de moi",
-    "subtitle": "Motivé par la curiosité et la passion pour la technologie, je me spécialise à l'intersection de l'ingénierie réseau et du développement fullstack.",
-    "paragraph1": "En tant qu'étudiant en Réseaux Informatiques, j'ai développé une compréhension profonde de la façon dont les données circulent dans les systèmes complexes. Ma concentration sur le développement backend et DevOps me permet de construire et de maintenir l'infrastructure qui alimente les applications modernes.",
-    "paragraph2": "Je m'intéresse particulièrement aux protocoles réseau, aux systèmes distribués et à l'automatisation. Mon objectif est de créer des solutions robustes et scalables qui peuvent répondre aux demandes du monde interconnecté d'aujourd'hui.",
-    "paragraph3": "Quand je ne code pas, vous me trouverez explorant de nouvelles technologies, contribuant à des projets open-source, ou plongeant dans la recherche en cybersécurité.",
-    "expertise": {
-      "networking": {
-        "title": "Ingénierie Réseau",
-        "description": "Compréhension approfondie des protocoles, du routage et de l'architecture réseau"
-      },
-      "backend": {
-        "title": "Développement Backend",
-        "description": "Construction d'API scalables et de systèmes distribués"
-      },
-      "devops": {
-        "title": "DevOps et Automatisation",
-        "description": "Pipelines CI/CD, containerisation et infrastructure as code"
-      }
-    }
+    "title": "À propos de moi"
   },
   "projects": {
     "title": "Projets Sélectionnés",
@@ -66,9 +44,5 @@
     "subject": "Sujet",
     "message": "Message",
     "send": "Envoyer le Message"
-  },
-  "metadata": {
-    "title": "Mandrindra Antonnio - Développeur Fullstack Junior",
-    "description": "Étudiant en Réseaux Informatiques se spécialisant dans le développement backend et DevOps. Passionné par la construction de systèmes scalables et d'infrastructures réseau."
   }
 }

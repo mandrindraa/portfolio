@@ -7,6 +7,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import portfolioData from "@/data/portfolio.json"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,7 +34,7 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href={`/${currentLocale}`} className="font-bold text-xl font-space-grotesk">
-            {t("name")}
+            {portfolioData.personal.name}
           </Link>
 
           {/* Desktop Navigation */}

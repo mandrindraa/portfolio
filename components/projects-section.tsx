@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
 import { useTranslations } from "next-intl"
-import projectsData from "@/data/projects.json"
+import portfolioData from "@/data/portfolio.json"
 import { useLocale } from "next-intl"
 
 export function ProjectsSection() {
@@ -23,7 +23,7 @@ export function ProjectsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projectsData.projects.map((project) => {
+          {portfolioData.projects.map((project) => {
             const translation = project.translations[locale as keyof typeof project.translations];
             if (!translation) return null;
 

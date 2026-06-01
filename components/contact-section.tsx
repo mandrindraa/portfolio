@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
 import { useTranslations } from "next-intl"
+import portfolioData from "@/data/portfolio.json"
 
 export function ContactSection() {
   const t = useTranslations("contact")
@@ -58,10 +59,10 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium">{t("email")}</p>
                     <a
-                      href="mailto:mandrindraantonnio@gmail.com"
+                      href={`mailto:${portfolioData.personal.email}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      mandrindraantonnio@gmail.com
+                      {portfolioData.personal.email}
                     </a>
                   </div>
                 </div>
@@ -72,8 +73,11 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium">{t("phone")}</p>
-                    <a href="tel:+261384813296" className="text-muted-foreground hover:text-primary transition-colors">
-                      +261 (38) 48 132 96
+                    <a
+                      href={`tel:${portfolioData.personal.phone.replace(/\s+/g, '')}`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {portfolioData.personal.phone}
                     </a>
                   </div>
                 </div>
@@ -84,7 +88,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium">{t("location")}</p>
-                    <p className="text-muted-foreground">Antananarivo, MG</p>
+                    <p className="text-muted-foreground">{portfolioData.personal.location}</p>
                   </div>
                 </div>
               </div>
@@ -94,7 +98,7 @@ export function ContactSection() {
               <h4 className="font-semibold mb-4">{t("findMeOnline")}</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/mandrindraa"
+                  href={portfolioData.personal.github}
                   className="p-3 bg-card border border-border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -103,7 +107,7 @@ export function ContactSection() {
                   <span className="sr-only">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={portfolioData.personal.linkedin}
                   className="p-3 bg-card border border-border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
