@@ -1,24 +1,28 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export function HeroSection() {
+  const t = useTranslations("hero")
+
   return (
     <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-space-grotesk mb-6">
-          Network & Backend
-          <span className="text-primary block">Developer</span>
+          {t("title")}
+          <span className="text-primary block">{t("titleHighlight")}</span>
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Computer Networks student passionate about building scalable backend systems, network infrastructure, and
-          DevOps automation. Currently seeking opportunities to apply my technical skills in real-world projects.
+          {t("description")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button size="lg" className="font-medium">
-            <a href="#projects">View My Work</a>
+            <a href="#projects">{t("viewWork")}</a>
           </Button>
           <Button variant="outline" size="lg" className="font-medium bg-transparent">
-            <a href="#contact">Get In Touch</a>
+            <a href="#contact">{t("getInTouch")}</a>
           </Button>
         </div>
         <div className="flex justify-center space-x-6">

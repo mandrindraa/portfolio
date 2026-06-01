@@ -1,5 +1,8 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { useTranslations } from "next-intl"
 
 const skillCategories = [
   {
@@ -29,13 +32,15 @@ const skillCategories = [
 ]
 
 export function SkillsSection() {
+  const t = useTranslations("skills")
+
   return (
     <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">Technical Skills</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">{t("title")}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for building robust network infrastructure and scalable backend systems.
+            {t("subtitle")}
           </p>
         </div>
 

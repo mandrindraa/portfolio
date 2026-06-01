@@ -1,0 +1,74 @@
+{
+  "navigation": {
+    "name": "Mandrindra Antonnio R.",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Network & Backend",
+    "titleHighlight": "Developer",
+    "description": "Computer Networks student passionate about building scalable backend systems, network infrastructure, and DevOps automation. Currently seeking opportunities to apply my technical skills in real-world projects.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Driven by curiosity and a passion for technology, I specialize in the intersection of network engineering and fullstack development.",
+    "paragraph1": "As a Computer Networks student, I've developed a deep understanding of how data flows through complex systems. My focus on backend development and DevOps allows me to build and maintain the infrastructure that powers modern applications.",
+    "paragraph2": "I'm particularly interested in network protocols, distributed systems, and automation. My goal is to create robust, scalable solutions that can handle the demands of today's interconnected world.",
+    "paragraph3": "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or diving deep into network security research.",
+    "expertise": {
+      "networking": {
+        "title": "Network Engineering",
+        "description": "Deep understanding of protocols, routing, and network architecture"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building scalable APIs and distributed systems"
+      },
+      "devops": {
+        "title": "DevOps & Automation",
+        "description": "CI/CD pipelines, containerization, and infrastructure as code"
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of my work in backend development, network engineering, and DevOps automation.",
+    "viewCode": "Code",
+    "viewDemo": "Demo"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "A comprehensive toolkit for building robust network infrastructure and scalable backend systems."
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My journey in technology, from academic foundations to practical industry experience.",
+    "professionalExperience": "Professional Experience",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always interested in discussing new opportunities, collaborations, or just talking about technology.",
+    "letsConnect": "Let's Connect",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "findMeOnline": "Find me online",
+    "sendMessage": "Send a Message",
+    "messageDescription": "I'll get back to you as soon as possible.",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "metadata": {
+    "title": "Mandrindra Antonnio - Fullstack Junior Developer",
+    "description": "Computer Networks student specializing in backend development and DevOps. Passionate about building scalable systems and network infrastructure."
+  }
+}

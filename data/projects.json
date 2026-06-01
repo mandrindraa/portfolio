@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "id": "network-traffic-analyzer",
+      "image": "/network-traffic-analyzer-dashboard.png",
+      "technologies": ["Python", "Wireshark", "Scapy", "Flask", "SQLite"],
+      "github": "https://github.com",
+      "demo": "https://demo.com",
+      "translations": {
+        "en": {
+          "title": "Network Traffic Analyzer",
+          "description": "A real-time network traffic monitoring tool built with Python and Wireshark integration. Features packet analysis, protocol detection, and security threat identification."
+        },
+        "fr": {
+          "title": "Analyseur de Trafic Réseau",
+          "description": "Un outil de surveillance du trafic réseau en temps réel construit avec l'intégration Python et Wireshark. Comprend l'analyse des paquets, la détection de protocoles et l'identification des menaces de sécurité."
+        }
+      }
+    },
+    {
+      "id": "microservices-gateway",
+      "image": "/microservices-architecture.png",
+      "technologies": ["Node.js", "Express", "Docker", "Redis", "Nginx"],
+      "github": "https://github.com",
+      "demo": null,
+      "translations": {
+        "en": {
+          "title": "Microservices API Gateway",
+          "description": "A scalable API gateway built with Node.js and Docker, featuring load balancing, rate limiting, and service discovery for microservices architecture."
+        },
+        "fr": {
+          "title": "Passerelle API Microservices",
+          "description": "Une passerelle API scalable construite avec Node.js et Docker, avec équilibrage de charge, limitation de débit et découverte de services pour l'architecture microservices."
+        }
+      }
+    },
+    {
+      "id": "infrastructure-automation",
+      "image": "/devops-pipeline-automation.png",
+      "technologies": ["Terraform", "Ansible", "Jenkins", "AWS", "Kubernetes"],
+      "github": "https://github.com",
+      "demo": null,
+      "translations": {
+        "en": {
+          "title": "Infrastructure Automation Pipeline",
+          "description": "Complete CI/CD pipeline using Terraform, Ansible, and Jenkins for automated deployment and infrastructure management across multiple cloud providers."
+        },
+        "fr": {
+          "title": "Pipeline d'Automatisation de l'Infrastructure",
+          "description": "Pipeline CI/CD complet utilisant Terraform, Ansible et Jenkins pour le déploiement automatisé et la gestion de l'infrastructure sur plusieurs fournisseurs de cloud."
+        }
+      }
+    },
+    {
+      "id": "distributed-chat",
+      "image": "/distributed-chat-interface.png",
+      "technologies": ["Go", "WebSocket", "Redis", "MongoDB", "Docker"],
+      "github": "https://github.com",
+      "demo": "https://chat-demo.com",
+      "translations": {
+        "en": {
+          "title": "Distributed Chat System",
+          "description": "A real-time chat application with WebSocket support, message queuing, and horizontal scaling capabilities using Redis and MongoDB."
+        },
+        "fr": {
+          "title": "Système de Chat Distribué",
+          "description": "Une application de chat en temps réel avec support WebSocket, mise en queue des messages et capacités de mise à l'échelle horizontale utilisant Redis et MongoDB."
+        }
+      }
+    }
+  ]
+}

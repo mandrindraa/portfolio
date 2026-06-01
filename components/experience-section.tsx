@@ -1,6 +1,9 @@
+"use client"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const experiences = [
   {
@@ -43,20 +46,22 @@ const certifications = [
 ]
 
 export function ExperienceSection() {
+  const t = useTranslations("experience")
+
   return (
     <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">Experience & Education</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">{t("title")}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My journey in technology, from academic foundations to practical industry experience.
+            {t("subtitle")}
           </p>
         </div>
 
         <div className="space-y-12">
           {/* Experience */}
           <div>
-            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">Professional Experience</h3>
+            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">{t("professionalExperience")}</h3>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
                 <Card key={index} className="hover:shadow-md transition-shadow">
@@ -97,7 +102,7 @@ export function ExperienceSection() {
 
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">Education</h3>
+            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">{t("education")}</h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <Card key={index} className="hover:shadow-md transition-shadow">
@@ -132,7 +137,7 @@ export function ExperienceSection() {
 
           {/* Certifications */}
           <div>
-            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">Certifications</h3>
+            <h3 className="text-2xl font-semibold font-space-grotesk mb-6 text-primary">{t("certifications")}</h3>
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <div className="flex flex-wrap gap-3">
