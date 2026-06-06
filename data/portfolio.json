@@ -1,0 +1,274 @@
+{
+  "personal": {
+    "name": "Mandrindra Antonnio R.",
+    "email": "mandrindraantonnio@gmail.com",
+    "phone": "+261 (38) 48 132 96",
+    "location": "Antananarivo, MG",
+    "github": "https://github.com/mandrindraa",
+    "linkedin": "https://linkedin.com/in/mandrindra-antonnio",
+    "translations": {
+      "en": {
+        "title": "Network & Backend",
+        "titleHighlight": "Developer",
+        "description": "Computer Networks student passionate about building scalable backend systems, network infrastructure, and DevOps automation. Currently seeking opportunities to apply my technical skills in real-world projects."
+      },
+      "fr": {
+        "title": "Développeur Réseau &",
+        "titleHighlight": "Backend",
+        "description": "Étudiant en Réseaux Informatiques passionné par la construction de systèmes backend scalables, d'infrastructures réseau et d'automatisation DevOps. Je recherche actuellement des opportunités pour appliquer mes compétences techniques dans des projets réels."
+      }
+    }
+  },
+  "about": {
+    "translations": {
+      "en": {
+        "subtitle": "Driven by curiosity and a passion for technology, I specialize in the intersection of network engineering and fullstack development.",
+        "paragraph1": "As a Computer Networks student, I've developed a deep understanding of how data flows through complex systems. My focus on backend development and DevOps allows me to build and maintain the infrastructure that powers modern applications.",
+        "paragraph2": "I'm particularly interested in network protocols, distributed systems, and automation. My goal is to create robust, scalable solutions that can handle the demands of today's interconnected world.",
+        "paragraph3": "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or diving deep into network security research."
+      },
+      "fr": {
+        "subtitle": "Motivé par la curiosité et la passion pour la technologie, je me spécialise à l'intersection de l'ingénierie réseau et du développement fullstack.",
+        "paragraph1": "En tant qu'étudiant en Réseaux Informatiques, j'ai développé une compréhension profonde de la façon dont les données circulent dans les systèmes complexes. Ma concentration sur le développement backend et DevOps me permet de construire et de maintenir l'infrastructure qui alimente les applications modernes.",
+        "paragraph2": "Je m'intéresse particulièrement aux protocoles réseau, aux systèmes distribués et à l'automatisation. Mon objectif est de créer des solutions robustes et scalables qui peuvent répondre aux demandes du monde interconnecté d'aujourd'hui.",
+        "paragraph3": "Quand je ne code pas, vous me trouverez explorant de nouvelles technologies, contribuant à des projets open-source, ou plongeant dans la recherche en cybersécurité."
+      }
+    },
+    "expertise": [
+      {
+        "id": "networking",
+        "icon": "Network",
+        "translations": {
+          "en": {
+            "title": "Network Engineering",
+            "description": "Deep understanding of protocols, routing, and network architecture"
+          },
+          "fr": {
+            "title": "Ingénierie Réseau",
+            "description": "Compréhension approfondie des protocoles, du routage et de l'architecture réseau"
+          }
+        }
+      },
+      {
+        "id": "backend",
+        "icon": "Server",
+        "translations": {
+          "en": {
+            "title": "Backend Development",
+            "description": "Building scalable APIs and distributed systems"
+          },
+          "fr": {
+            "title": "Développement Backend",
+            "description": "Construction d'API scalables et de systèmes distribués"
+          }
+        }
+      },
+      {
+        "id": "devops",
+        "icon": "Cog",
+        "translations": {
+          "en": {
+            "title": "DevOps & Automation",
+            "description": "CI/CD pipelines, containerization, and infrastructure as code"
+          },
+          "fr": {
+            "title": "DevOps et Automatisation",
+            "description": "Pipelines CI/CD, containerisation et infrastructure as code"
+          }
+        }
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "network-traffic-analyzer",
+      "image": "/network-traffic-analyzer-dashboard.png",
+      "technologies": ["Python", "Wireshark", "Scapy", "Flask", "SQLite"],
+      "github": "https://github.com",
+      "demo": "https://demo.com",
+      "translations": {
+        "en": {
+          "title": "Network Traffic Analyzer",
+          "description": "A real-time network traffic monitoring tool built with Python and Wireshark integration. Features packet analysis, protocol detection, and security threat identification."
+        },
+        "fr": {
+          "title": "Analyseur de Trafic Réseau",
+          "description": "Un outil de surveillance du trafic réseau en temps réel construit avec l'intégration Python et Wireshark. Comprend l'analyse des paquets, la détection de protocoles et l'identification des menaces de sécurité."
+        }
+      }
+    },
+    {
+      "id": "microservices-gateway",
+      "image": "/microservices-architecture.png",
+      "technologies": ["Node.js", "Express", "Docker", "Redis", "Nginx"],
+      "github": "https://github.com",
+      "demo": null,
+      "translations": {
+        "en": {
+          "title": "Microservices API Gateway",
+          "description": "A scalable API gateway built with Node.js and Docker, featuring load balancing, rate limiting, and service discovery for microservices architecture."
+        },
+        "fr": {
+          "title": "Passerelle API Microservices",
+          "description": "Une passerelle API scalable construite avec Node.js et Docker, avec équilibrage de charge, limitation de débit et découverte de services pour l'architecture microservices."
+        }
+      }
+    },
+    {
+      "id": "infrastructure-automation",
+      "image": "/devops-pipeline-automation.png",
+      "technologies": ["Terraform", "Ansible", "Jenkins", "AWS", "Kubernetes"],
+      "github": "https://github.com",
+      "demo": null,
+      "translations": {
+        "en": {
+          "title": "Infrastructure Automation Pipeline",
+          "description": "Complete CI/CD pipeline using Terraform, Ansible, and Jenkins for automated deployment and infrastructure management across multiple cloud providers."
+        },
+        "fr": {
+          "title": "Pipeline d'Automatisation de l'Infrastructure",
+          "description": "Pipeline CI/CD complet utilisant Terraform, Ansible et Jenkins pour le déploiement automatisé et la gestion de l'infrastructure sur plusieurs fournisseurs de cloud."
+        }
+      }
+    },
+    {
+      "id": "distributed-chat",
+      "image": "/distributed-chat-interface.png",
+      "technologies": ["Go", "WebSocket", "Redis", "MongoDB", "Docker"],
+      "github": "https://github.com",
+      "demo": "https://chat-demo.com",
+      "translations": {
+        "en": {
+          "title": "Distributed Chat System",
+          "description": "A real-time chat application with WebSocket support, message queuing, and horizontal scaling capabilities using Redis and MongoDB."
+        },
+        "fr": {
+          "title": "Système de Chat Distribué",
+          "description": "Une application de chat en temps réel avec support WebSocket, mise en queue des messages et capacités de mise à l'échelle horizontale utilisant Redis et MongoDB."
+        }
+      }
+    }
+  ],
+  "skills": [
+    {
+      "translations": {
+        "en": "Programming Languages",
+        "fr": "Langages de programmation"
+      },
+      "skills": ["Python", "Go", "JavaScript/TypeScript", "Java", "C++", "Bash/Shell"]
+    },
+    {
+      "translations": {
+        "en": "Backend Technologies",
+        "fr": "Technologies Backend"
+      },
+      "skills": ["Node.js", "Express.js", "FastAPI", "Django", "PostgreSQL", "MongoDB", "Redis"]
+    },
+    {
+      "translations": {
+        "en": "DevOps & Cloud",
+        "fr": "DevOps & Cloud"
+      },
+      "skills": ["Docker", "Kubernetes", "AWS", "Terraform", "Ansible", "Jenkins", "GitLab CI"]
+    },
+    {
+      "translations": {
+        "en": "Networking & Protocols",
+        "fr": "Réseaux & Protocoles"
+      },
+      "skills": ["TCP/IP", "HTTP/HTTPS", "DNS", "BGP", "OSPF", "VPN", "Wireshark"]
+    },
+    {
+      "translations": {
+        "en": "Tools & Platforms",
+        "fr": "Outils & Plateformes"
+      },
+      "skills": ["Git", "Linux", "Nginx", "Apache", "Grafana", "Prometheus", "ELK Stack"]
+    },
+    {
+      "translations": {
+        "en": "Databases",
+        "fr": "Bases de données"
+      },
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "InfluxDB", "Elasticsearch"]
+    }
+  ],
+  "experiences": [
+    {
+      "company": "TechCorp Solutions",
+      "location": "San Francisco, CA",
+      "period": "Jun 2024 - Aug 2024",
+      "technologies": ["Cisco", "Python", "SNMP", "Wireshark"],
+      "translations": {
+        "en": {
+          "title": "Network Engineering Intern",
+          "description": "Assisted in network infrastructure maintenance and monitoring. Implemented automated network health checks and contributed to security protocol updates."
+        },
+        "fr": {
+          "title": "Stagiaire en Ingénierie Réseau",
+          "description": "Aidé à la maintenance et à la surveillance de l'infrastructure réseau. Implémenté des contrôles automatisés de l'état du réseau et contribué aux mises à jour des protocoles de sécurité."
+        }
+      }
+    },
+    {
+      "company": "StartupXYZ (Part-time)",
+      "location": "Remote",
+      "period": "Jan 2024 - Present",
+      "technologies": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+      "translations": {
+        "en": {
+          "title": "Backend Developer",
+          "description": "Developing RESTful APIs and microservices for a fintech application. Implemented caching strategies and database optimization techniques."
+        },
+        "fr": {
+          "title": "Développeur Backend",
+          "description": "Développement d'API RESTful et de microservices pour une application fintech. Implémentation de stratégies de mise en cache et de techniques d'optimisation de base de données."
+        }
+      }
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Technology",
+      "location": "San Francisco, CA",
+      "period": "2022 - 2026 (Expected)",
+      "gpa": "3.8/4.0",
+      "translations": {
+        "en": {
+          "degree": "Bachelor of Science in Computer Networks",
+          "description": "Relevant coursework: Network Protocols, Distributed Systems, Database Management, Cybersecurity, Software Engineering"
+        },
+        "fr": {
+          "degree": "Licence en Réseaux Informatiques",
+          "description": "Cours pertinents : Protocoles réseau, Systèmes distribués, Gestion de bases de données, Cybersécurité, Génie logiciel"
+        }
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "translations": {
+        "en": "AWS Cloud Practitioner",
+        "fr": "AWS Cloud Practitioner"
+      }
+    },
+    {
+      "translations": {
+        "en": "Cisco CCNA (In Progress)",
+        "fr": "Cisco CCNA (En cours)"
+      }
+    },
+    {
+      "translations": {
+        "en": "Docker Certified Associate",
+        "fr": "Docker Certified Associate"
+      }
+    },
+    {
+      "translations": {
+        "en": "CompTIA Network+",
+        "fr": "CompTIA Network+"
+      }
+    }
+  ]
+}

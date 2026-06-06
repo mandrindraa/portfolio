@@ -1,0 +1,48 @@
+{
+  "navigation": {
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "viewWork": "Voir mon travail",
+    "getInTouch": "Me contacter"
+  },
+  "about": {
+    "title": "À propos de moi"
+  },
+  "projects": {
+    "title": "Projets Sélectionnés",
+    "subtitle": "Un aperçu de mon travail en développement backend, ingénierie réseau et automatisation DevOps.",
+    "viewCode": "Code",
+    "viewDemo": "Démo"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Un ensemble d'outils complets pour construire une infrastructure réseau robuste et des systèmes backend scalables."
+  },
+  "experience": {
+    "title": "Expérience et Éducation",
+    "subtitle": "Mon parcours en technologie, des fondations académiques à l'expérience pratique en industrie.",
+    "professionalExperience": "Expérience Professionnelle",
+    "education": "Éducation",
+    "certifications": "Certifications"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Je suis toujours intéressé par les discussions sur de nouvelles opportunités, collaborations ou simplement parler de technologie.",
+    "letsConnect": "Restons en contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "findMeOnline": "Trouvez-moi en ligne",
+    "sendMessage": "Envoyer un Message",
+    "messageDescription": "Je vous répondrai dès que possible.",
+    "name": "Nom",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le Message"
+  }
+}

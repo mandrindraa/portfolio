@@ -6,7 +6,13 @@ import { SkillsSection } from "@/components/skills-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { ContactSection } from "@/components/contact-section"
 
-export default function Home() {
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Home({ params }: PageProps) {
+  await params;
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

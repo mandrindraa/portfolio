@@ -1,0 +1,48 @@
+{
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of my work in backend development, network engineering, and DevOps automation.",
+    "viewCode": "Code",
+    "viewDemo": "Demo"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "A comprehensive toolkit for building robust network infrastructure and scalable backend systems."
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My journey in technology, from academic foundations to practical industry experience.",
+    "professionalExperience": "Professional Experience",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always interested in discussing new opportunities, collaborations, or just talking about technology.",
+    "letsConnect": "Let's Connect",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "findMeOnline": "Find me online",
+    "sendMessage": "Send a Message",
+    "messageDescription": "I'll get back to you as soon as possible.",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message"
+  }
+}

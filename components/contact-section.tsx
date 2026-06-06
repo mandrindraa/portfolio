@@ -9,8 +9,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
+import { useTranslations } from "next-intl"
+import portfolioData from "@/data/portfolio.json"
 
 export function ContactSection() {
+  const t = useTranslations("contact")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,9 +40,9 @@ export function ContactSection() {
     <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-space-grotesk mb-4">{t("title")}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always interested in discussing new opportunities, collaborations, or just talking about technology.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -47,19 +50,19 @@ export function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold font-space-grotesk mb-6">Let's Connect</h3>
+              <h3 className="text-xl font-semibold font-space-grotesk mb-6">{t("letsConnect")}</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-primary/10 rounded-lg">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Email</p>
+                    <p className="font-medium">{t("email")}</p>
                     <a
-                      href="mailto:alex.chen@example.com"
+                      href={`mailto:${portfolioData.personal.email}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      mandrindraantonnio@gmail.com
+                      {portfolioData.personal.email}
                     </a>
                   </div>
                 </div>
@@ -69,9 +72,12 @@ export function ContactSection() {
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Phone</p>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                      +261 (38) 48 132 96
+                    <p className="font-medium">{t("phone")}</p>
+                    <a
+                      href={`tel:${portfolioData.personal.phone.replace(/\s+/g, '')}`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {portfolioData.personal.phone}
                     </a>
                   </div>
                 </div>
@@ -81,18 +87,18 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">Antananarivo, MG</p>
+                    <p className="font-medium">{t("location")}</p>
+                    <p className="text-muted-foreground">{portfolioData.personal.location}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Find me online</h4>
+              <h4 className="font-semibold mb-4">{t("findMeOnline")}</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/mandrindraa"
+                  href={portfolioData.personal.github}
                   className="p-3 bg-card border border-border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -101,7 +107,7 @@ export function ContactSection() {
                   <span className="sr-only">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={portfolioData.personal.linkedin}
                   className="p-3 bg-card border border-border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -116,18 +122,18 @@ export function ContactSection() {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle className="font-space-grotesk">Send a Message</CardTitle>
-              <CardDescription>I'll get back to you as soon as possible.</CardDescription>
+              <CardTitle className="font-space-grotesk">{t("sendMessage")}</CardTitle>
+              <CardDescription>{t("messageDescription")}</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">{t("name")}</Label>
                     <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">{t("email")}</Label>
                     <Input
                       id="email"
                       name="email"
@@ -139,11 +145,11 @@ export function ContactSection() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
+                  <Label htmlFor="subject">{t("subject")}</Label>
                   <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">{t("message")}</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -154,7 +160,7 @@ export function ContactSection() {
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Send Message
+                  {t("send")}
                 </Button>
               </form>
             </CardContent>
