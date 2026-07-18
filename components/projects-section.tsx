@@ -7,6 +7,7 @@ import { Github, ExternalLink } from "lucide-react"
 import { useTranslations } from "next-intl"
 import portfolioData from "@/data/portfolio.json"
 import { useLocale } from "next-intl"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function ProjectsSection() {
   const t = useTranslations("projects")
@@ -26,9 +27,10 @@ export function ProjectsSection() {
           {portfolioData.projects.map((project) => {
             const translation = project.translations[locale as keyof typeof project.translations];
             if (!translation) return null;
+            const ref = useScrollAnimation();
 
             return (
-              <Card key={project.id} className="group hover:shadow-lg transition-all duration-300">
+              <Card ref={ref} key={project.id} className="group fade-in-scroll hover:shadow-lg transition-all duration-300">
                 <div className="aspect-video overflow-hidden rounded-t-lg">
                   <img
                     src={project.image || "/placeholder.svg"}

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Cog, Network, Server } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import portfolioData from "@/data/portfolio.json";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const iconMap = {
   Network: Network,
@@ -52,8 +53,10 @@ export function AboutSection() {
               const IconComponent =
                 iconMap[exp.icon as keyof typeof iconMap] || Server;
 
+              const ref = useScrollAnimation();
+
               return (
-                <Card key={exp.id} className="hover:shadow-md transition-shadow">
+                <Card ref={ref} key={exp.id} className="fade-in-scroll hover:shadow-md transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
                       <div className="p-2 bg-primary/10 rounded-lg">
