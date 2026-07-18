@@ -104,7 +104,6 @@ export function ExperienceSection() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-foreground mb-2 leading-relaxed">{translation.description}</p>
-                      <p className="text-sm font-medium text-primary">GPA: {edu.gpa}</p>
                     </CardContent>
                   </Card>
                 );

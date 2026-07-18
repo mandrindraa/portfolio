@@ -8,13 +8,13 @@
     "linkedin": "https://linkedin.com/in/mandrindra-antonnio",
     "translations": {
       "en": {
-        "title": "Network & Backend",
+        "title": "Junior Fullstack",
         "titleHighlight": "Developer",
         "description": "Computer Networks student passionate about building scalable backend systems, network infrastructure, and DevOps automation. Currently seeking opportunities to apply my technical skills in real-world projects."
       },
       "fr": {
-        "title": "Développeur Réseau &",
-        "titleHighlight": "Backend",
+        "title": "Développeur Junior",
+        "titleHighlight": "Fullstack",
         "description": "Étudiant en Réseaux Informatiques passionné par la construction de systèmes backend scalables, d'infrastructures réseau et d'automatisation DevOps. Je recherche actuellement des opportunités pour appliquer mes compétences techniques dans des projets réels."
       }
     }
@@ -81,70 +81,70 @@
   },
   "projects": [
     {
-      "id": "network-traffic-analyzer",
-      "image": "/network-traffic-analyzer-dashboard.png",
-      "technologies": ["Python", "Wireshark", "Scapy", "Flask", "SQLite"],
-      "github": "https://github.com",
-      "demo": "https://demo.com",
-      "translations": {
-        "en": {
-          "title": "Network Traffic Analyzer",
-          "description": "A real-time network traffic monitoring tool built with Python and Wireshark integration. Features packet analysis, protocol detection, and security threat identification."
-        },
-        "fr": {
-          "title": "Analyseur de Trafic Réseau",
-          "description": "Un outil de surveillance du trafic réseau en temps réel construit avec l'intégration Python et Wireshark. Comprend l'analyse des paquets, la détection de protocoles et l'identification des menaces de sécurité."
-        }
-      }
-    },
-    {
-      "id": "microservices-gateway",
+      "id": "cua",
       "image": "/microservices-architecture.png",
-      "technologies": ["Node.js", "Express", "Docker", "Redis", "Nginx"],
-      "github": "https://github.com",
-      "demo": null,
+      "technologies": ["NestJS", "PostgreSQL", "JWT", "RBAC", "Cloudflare Tunnel"],
+      "github": "https://github.com/mandrindraa",
+      "demo": "",
       "translations": {
         "en": {
-          "title": "Microservices API Gateway",
-          "description": "A scalable API gateway built with Node.js and Docker, featuring load balancing, rate limiting, and service discovery for microservices architecture."
+          "title": "CUA Market Management System",
+          "description": "Backend system (NestJS + PostgreSQL) for managing municipal market stall rentals for the Commune Urbaine d'Antananarivo, handling payment processing at city scale with JWT authentication and role-based access control."
         },
         "fr": {
-          "title": "Passerelle API Microservices",
-          "description": "Une passerelle API scalable construite avec Node.js et Docker, avec équilibrage de charge, limitation de débit et découverte de services pour l'architecture microservices."
+          "title": "Système de gestion des places du marché de la C.U.A",
+          "description": "Backend (NestJS + PostgreSQL) pour la gestion du paiement des places de marché de la Commune Urbaine d'Antananarivo, à l'échelle de la ville, avec authentification JWT et contrôle d'accès basé sur les rôles."
         }
       }
     },
     {
-      "id": "infrastructure-automation",
-      "image": "/devops-pipeline-automation.png",
-      "technologies": ["Terraform", "Ansible", "Jenkins", "AWS", "Kubernetes"],
-      "github": "https://github.com",
-      "demo": null,
+      "id": "cmil",
+      "image": "/CMIL.png",
+      "technologies": ["Strapi v5", "PostgreSQL", "Nginx", "Cloudflare", "Nodemailer"],
+      "github": "https://github.com/mandrindraa",
+      "demo": "",
       "translations": {
         "en": {
-          "title": "Infrastructure Automation Pipeline",
-          "description": "Complete CI/CD pipeline using Terraform, Ansible, and Jenkins for automated deployment and infrastructure management across multiple cloud providers."
+          "title": "CMIL Media Platform",
+          "description": "Backend and admin panel for a media organization built on Strapi v5, with custom lifecycle hooks for email notifications, Cloudflare Turnstile CAPTCHA integration, and a custom teal/Linear-inspired admin theme."
         },
         "fr": {
-          "title": "Pipeline d'Automatisation de l'Infrastructure",
-          "description": "Pipeline CI/CD complet utilisant Terraform, Ansible et Jenkins pour le déploiement automatisé et la gestion de l'infrastructure sur plusieurs fournisseurs de cloud."
+          "title": "Plateforme Média CMIL",
+          "description": "Backend et panneau d'administration pour une organisation média construite sur Strapi v5, avec hooks de cycle de vie personnalisés pour les notifications par email, intégration du CAPTCHA Cloudflare Turnstile, et un thème d'administration personnalisé inspiré de Linear."
         }
       }
     },
     {
-      "id": "distributed-chat",
-      "image": "/distributed-chat-interface.png",
-      "technologies": ["Go", "WebSocket", "Redis", "MongoDB", "Docker"],
-      "github": "https://github.com",
-      "demo": "https://chat-demo.com",
+      "id": "llm2sh",
+      "image": "/LLM2ShApp_2026-06-11T21_26_15_221395.svg",
+      "technologies": ["Python", "OpenAI API", "Ollama", "pytest", "uv"],
+      "github": "https://github.com/mandrindraa/llm2sh",
+      "demo": "",
       "translations": {
         "en": {
-          "title": "Distributed Chat System",
-          "description": "A real-time chat application with WebSocket support, message queuing, and horizontal scaling capabilities using Redis and MongoDB."
+          "title": "llm2sh",
+          "description": "An open-source Python TUI that translates natural language into shell commands using OpenAI or Ollama APIs, packaged with uv and tested with pytest."
         },
         "fr": {
-          "title": "Système de Chat Distribué",
-          "description": "Une application de chat en temps réel avec support WebSocket, mise en queue des messages et capacités de mise à l'échelle horizontale utilisant Redis et MongoDB."
+          "title": "llm2sh",
+          "description": "Un TUI Python open-source qui traduit le langage naturel en commandes shell via les API OpenAI ou Ollama, packagé avec uv et testé avec pytest."
+        }
+      }
+    },
+    {
+      "id": "grind",
+      "image": "/grind_v2_full_diagram.png",
+      "technologies": ["FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "RustFS", "GPT-4o", "Turborepo", "Dokploy"],
+      "github": "https://github.com/mandrindraa",
+      "demo": "",
+      "translations": {
+        "en": {
+          "title": "Grind v2",
+          "description": "A personal 'student OS' built as a Turborepo monorepo (web, mobile, api) with a FastAPI backend, PostgreSQL via SQLAlchemy/Alembic, RustFS for S3-compatible storage, and a GPT-4o powered RAG pipeline, deployed on a DigitalOcean VPS via Dokploy."
+        },
+        "fr": {
+          "title": "Grind v2",
+          "description": "Un « OS étudiant » personnel construit en monorepo Turborepo (web, mobile, api) avec un backend FastAPI, PostgreSQL via SQLAlchemy/Alembic, RustFS pour le stockage compatible S3, et un pipeline RAG propulsé par GPT-4o, déployé sur un VPS DigitalOcean via Dokploy."
         }
       }
     }
@@ -183,51 +183,100 @@
         "en": "Tools & Platforms",
         "fr": "Outils & Plateformes"
       },
-      "skills": ["Git", "Linux", "Nginx", "Apache", "Grafana", "Prometheus", "ELK Stack"]
+      "skills": ["Git", "Linux", "Nginx", "Apache"]
     },
     {
       "translations": {
         "en": "Databases",
         "fr": "Bases de données"
       },
-      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "InfluxDB", "Elasticsearch"]
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
     }
   ],
   "experiences": [
+      {
+        "company": "UGD",
+        "location": "Antananarivo, MG",
+        "period": "Part-time - Jun 2026",
+        "technologies": [
+          "React",
+          "Strapi v5",
+          "PostgreSQL",
+          "IOMAD",
+          "Moodle",
+          "PHP",
+          "Nginx"
+        ],
+        "translations": {
+          "en": {
+            "title": "Fullstack Developer - CMIL & E-Learning Platforms",
+            "description": "Built and maintained the CMIL media platform backend on Strapi v5, and contributed within a PHP developer team to a multi-tenant e-learning platform on IOMAD/Moodle for a government ministry."
+          },
+          "fr": {
+            "title": "Développeur Fullstack - Plateformes CMIL & E-Learning",
+            "description": "Développement et maintenance du backend de la plateforme média CMIL sur Strapi v5, et contribution au sein d'une équipe de développeurs PHP à une plateforme e-learning multi-tenant sur IOMAD/Moodle pour un ministère."
+          }
+        }
+      },
+      {
+        "company": "PRODIGY 2026 / UGD",
+        "location": "Antananarivo, MG",
+        "period": "Jun 2026",
+        "technologies": [
+          "CTF",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "translations": {
+          "en": {
+            "title": "Madagascar Cybersecurity Symposium 1st Edition",
+            "description": "Selected team member at the CIRT-MDG / PRODIGY 2026 Cybersecurity & AI Hackathon (UGD), tackling crypto/steganography, forensics, buffer overflow exploitation, and API security challenges."
+          },
+          "fr": {
+            "title": "Participant a la premiere edition du Symposium de la cybersecurite de Madagascar",
+            "description": "Membre d'une équipe sélectionnée au Hackathon Cybersécurité & IA CIRT-MDG / PRODIGY 2026 (UGD), avec des épreuves de crypto/stéganographie, forensics, exploitation de buffer overflow et sécurité API."
+          }
+        }
+      },
+      {
+        "company": "C.U.A (Commune Urbaine d'Antananarivo)",
+        "location": "Antananarivo, MG",
+        "period": "Part-time - Nov 2025",
+        "technologies": [
+          "NestJS",
+          "PostgreSQL",
+          "JWT",
+          "RBAC"
+        ],
+        "translations": {
+          "en": {
+            "title": "Prestataire - Backend Developer",
+            "description": "Part-time prestataire building the backend (NestJS) for a city-scale municipal market rent payment system, with JWT authentication and role-based access control, delivered alongside my studies."
+          },
+          "fr": {
+            "title": "Prestataire - Développeur Backend",
+            "description": "Prestataire à temps partiel en charge du backend (NestJS) d'un système de paiement des loyers de marché à l'échelle de la ville, avec authentification JWT et contrôle d'accès basé sur les rôles, en parallèle de mes études."
+          }
+        }
+      }
+    ],
+  "education": [
     {
-      "company": "TechCorp Solutions",
-      "location": "San Francisco, CA",
-      "period": "Jun 2024 - Aug 2024",
-      "technologies": ["Cisco", "Python", "SNMP", "Wireshark"],
+      "school": "Université d'Antananarivo (MISA)",
+      "location": "Antananarivo, MG",
+      "period": "Jan 2026 - Present",
+      "gpa": "",
       "translations": {
         "en": {
-          "title": "Network Engineering Intern",
-          "description": "Assisted in network infrastructure maintenance and monitoring. Implemented automated network health checks and contributed to security protocol updates."
+          "degree": "Master's in Computer Science (M1)",
+          "description": "Relevant coursework: Data Science, Multi-Agent Systems, Stochastic Processes"
         },
         "fr": {
-          "title": "Stagiaire en Ingénierie Réseau",
-          "description": "Aidé à la maintenance et à la surveillance de l'infrastructure réseau. Implémenté des contrôles automatisés de l'état du réseau et contribué aux mises à jour des protocoles de sécurité."
+          "degree": "Master en Informatique (M1)",
+          "description": "Cours pertinents : Data Science, Systèmes multi-agents, Processus stochastiques"
         }
       }
     },
-    {
-      "company": "StartupXYZ (Part-time)",
-      "location": "Remote",
-      "period": "Jan 2024 - Present",
-      "technologies": ["Node.js", "PostgreSQL", "Redis", "Docker"],
-      "translations": {
-        "en": {
-          "title": "Backend Developer",
-          "description": "Developing RESTful APIs and microservices for a fintech application. Implemented caching strategies and database optimization techniques."
-        },
-        "fr": {
-          "title": "Développeur Backend",
-          "description": "Développement d'API RESTful et de microservices pour une application fintech. Implémentation de stratégies de mise en cache et de techniques d'optimisation de base de données."
-        }
-      }
-    }
-  ],
-  "education": [
     {
       "school": "University of Technology",
       "location": "San Francisco, CA",
@@ -248,26 +297,8 @@
   "certifications": [
     {
       "translations": {
-        "en": "AWS Cloud Practitioner",
-        "fr": "AWS Cloud Practitioner"
-      }
-    },
-    {
-      "translations": {
-        "en": "Cisco CCNA (In Progress)",
-        "fr": "Cisco CCNA (En cours)"
-      }
-    },
-    {
-      "translations": {
-        "en": "Docker Certified Associate",
-        "fr": "Docker Certified Associate"
-      }
-    },
-    {
-      "translations": {
-        "en": "CompTIA Network+",
-        "fr": "CompTIA Network+"
+        "en": "Javascript (Codingame)",
+        "fr": "Javascript (Codingame)"
       }
     }
   ]
