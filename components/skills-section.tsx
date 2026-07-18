@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useTranslations, useLocale } from "next-intl"
 import portfolioData from "@/data/portfolio.json"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function SkillsSection() {
   const t = useTranslations("skills")
@@ -25,9 +26,10 @@ export function SkillsSection() {
             const title =
               category.translations[locale as keyof typeof category.translations] ||
               category.translations.en;
+            const ref = useScrollAnimation();
 
             return (
-              <Card key={index} className="hover:shadow-md transition-shadow">
+              <Card ref={ref} key={index} className="fade-in-scroll hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
                   <h3 className="font-semibold font-space-grotesk mb-4 text-primary">{title}</h3>
                   <div className="flex flex-wrap gap-2">

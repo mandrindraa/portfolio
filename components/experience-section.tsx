@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl"
 import portfolioData from "@/data/portfolio.json"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function ExperienceSection() {
   const t = useTranslations("experience")
@@ -32,9 +33,10 @@ export function ExperienceSection() {
                 const translation =
                   exp.translations[locale as keyof typeof exp.translations] ||
                   exp.translations.en;
+                const ref = useScrollAnimation();
 
                 return (
-                  <Card key={index} className="hover:shadow-md transition-shadow">
+                  <Card ref={ref} key={index} className="fade-in-scroll hover:shadow-md transition-shadow">
                     <CardHeader>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <div>
@@ -79,9 +81,10 @@ export function ExperienceSection() {
                 const translation =
                   edu.translations[locale as keyof typeof edu.translations] ||
                   edu.translations.en;
+                const ref = useScrollAnimation();
 
                 return (
-                  <Card key={index} className="hover:shadow-md transition-shadow">
+                  <Card ref={ref} key={index} className="fade-in-scroll hover:shadow-md transition-shadow">
                     <CardHeader>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <div>
