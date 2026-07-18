@@ -14,13 +14,34 @@ export function HeroSection() {
   return (
     <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
+        {/* Name with greeting */}
+        <div className="mb-4 flex items-center justify-center gap-2">
+          <span className="text-lg text-muted-foreground">Hey, I&apos;m</span>
+          <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            {personal.name}
+          </h2>
+        </div>
+
+        {/* Position Badge */}
+        <div className="mb-8 flex justify-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5">
+            <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-sm font-medium text-primary">
+              {locale === "en" ? "M1 Computer Science Student" : "Étudiant en Informatique (M1)"}
+            </span>
+          </div>
+        </div>
+
+        {/* Main title */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-space-grotesk mb-6">
           {translation.title}{" "}
           <span className="text-primary block">{translation.titleHighlight}</span>
         </h1>
+        
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
           {translation.description}
         </p>
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button size="lg" className="font-medium" asChild>
             <a href="#projects">{t("viewWork")}</a>
@@ -29,6 +50,7 @@ export function HeroSection() {
             <a href="#contact">{t("getInTouch")}</a>
           </Button>
         </div>
+        
         <div className="flex justify-center space-x-6">
           <a
             href={personal.github}
