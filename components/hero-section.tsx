@@ -22,16 +22,6 @@ export function HeroSection() {
           </h2>
         </div>
 
-        {/* Position Badge */}
-        <div className="mb-8 flex justify-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5">
-            <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">
-              {locale === "en" ? "M1 Computer Science Student" : "Étudiant en Informatique (M1)"}
-            </span>
-          </div>
-        </div>
-
         {/* Main title */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-space-grotesk mb-6">
           {translation.title}{" "}
