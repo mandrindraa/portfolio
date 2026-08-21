@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -19,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-variant/40">
+    <nav className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-variant/40 transition-colors duration-300">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
         <Link
           href="/"
@@ -47,7 +48,7 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <button
             onClick={toggleLang}
             aria-label="Toggle language"
@@ -55,6 +56,7 @@ export default function Navbar() {
           >
             {lang === "fr" ? "FR / EN" : "EN / FR"}
           </button>
+          <ThemeToggle />
           <a
             href="/resume.pdf"
             className="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-DEFAULT font-label-md text-label-md hover:bg-secondary transition-colors duration-300"
@@ -62,7 +64,7 @@ export default function Navbar() {
             {t.nav.resume}
           </a>
           <button
-            className="md:hidden text-primary"
+            className="md:hidden text-primary ml-1"
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
           >

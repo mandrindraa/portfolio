@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import { useLanguage } from "@/lib/LanguageContext";
-import Reveal from "@/components/Reveal";
 import PlaceholderArt from "@/components/PlaceholderArt";
+import Reveal from "@/components/Reveal";
+import { useLanguage } from "@/lib/LanguageContext";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -13,21 +13,20 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-[90vh] pt-24 pb-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden flex items-center"
+      <section
+        className="min-h-[90vh] pt-24 pb-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden flex items-center transition-colors duration-300"
         style={{
           background:
-            "radial-gradient(circle at 50% 30%, rgba(239,237,240,0.6) 0%, rgba(251,249,252,1) 65%)",
+            "radial-gradient(circle at 50% 30%, var(--color-surface-container) 0%, var(--color-background) 65%)",
         }}
       >
         <div className="max-w-container-max mx-auto w-full">
           <span className="font-label-caps text-label-caps text-secondary mb-6 uppercase tracking-widest block">
             {t.home.eyebrow}
           </span>
-          <h1 className="font-display text-[40px] leading-[46px] md:text-display text-primary mb-8 max-w-4xl">
+          <h1 className="font-display text-[40px] leading-11.5 md:text-display text-primary mb-8 max-w-4xl">
             {t.home.headlinePrefix}{" "}
-            <span className="italic font-normal">
-              {t.home.headlineItalic}
-            </span>{" "}
+            <span className="italic font-normal">{t.home.headlineItalic}</span>{" "}
             {t.home.headlineSuffix}
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
@@ -86,7 +85,7 @@ export default function HomePage() {
             {/* Project 1: Large */}
             <Reveal className="md:col-span-8 group cursor-pointer">
               <Link href="/projects">
-                <div className="aspect-[16/9] overflow-hidden bg-surface-container mb-6">
+                <div className="aspect-video overflow-hidden bg-surface-container mb-6">
                   <div className="w-full h-full group-hover:scale-102 transition-transform duration-700">
                     <PlaceholderArt label={selected[0].title} variant={0} />
                   </div>
@@ -106,7 +105,7 @@ export default function HomePage() {
               delay={100}
             >
               <Link href="/projects">
-                <div className="aspect-[4/5] overflow-hidden bg-surface-container mb-6">
+                <div className="aspect-4/5 overflow-hidden bg-surface-container mb-6">
                   <div className="w-full h-full group-hover:scale-102 transition-transform duration-700">
                     <PlaceholderArt label={selected[1].title} variant={1} />
                   </div>
@@ -139,11 +138,11 @@ export default function HomePage() {
 
             {/* Project 4: Medium */}
             <Reveal
-              className="md:col-span-6 group cursor-pointer md:mt-[-40px]"
+              className="md:col-span-6 group cursor-pointer md:-mt-10"
               delay={100}
             >
               <Link href="/projects">
-                <div className="aspect-[3/4] overflow-hidden bg-surface-container mb-6">
+                <div className="aspect-3/4 overflow-hidden bg-surface-container mb-6">
                   <div className="w-full h-full group-hover:scale-102 transition-transform duration-700">
                     <PlaceholderArt label={selected[3].title} variant={3} />
                   </div>
@@ -164,7 +163,7 @@ export default function HomePage() {
       <section className="py-32 md:py-40 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-y border-surface-variant/40">
         <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
           <Reveal className="relative">
-            <div className="aspect-[3/4] bg-surface-container relative z-10 overflow-hidden">
+            <div className="aspect-3/4 bg-surface-container relative z-10 overflow-hidden">
               <PlaceholderArt label="Mandrindra" variant={2} />
             </div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 border border-secondary/20 z-0 hidden lg:block" />
@@ -205,9 +204,7 @@ export default function HomePage() {
           </span>
           <h2 className="font-display text-[36px] md:text-[64px] leading-tight md:leading-none text-primary mb-16">
             {t.home.ctaTitlePrefix}{" "}
-            <span className="italic font-normal">
-              {t.home.ctaTitleItalic}
-            </span>{" "}
+            <span className="italic font-normal">{t.home.ctaTitleItalic}</span>{" "}
             {t.home.ctaTitleSuffix}
           </h2>
           <a
