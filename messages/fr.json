@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "titleTemplate": "%s | Mandrindra",
+    "home": {
+      "title": "Mandrindra — D\u00e9veloppeur Logiciel",
+      "description": "D\u00e9veloppeur full-stack orient\u00e9 backend, cr\u00e9ant des syst\u00e8mes robustes avec NestJS, FastAPI, Next.js et PostgreSQL."
+    },
+    "projects": {
+      "title": "Projets",
+      "description": "Plateformes full-stack, missions, outillage dev et d\u00e9fis CTF."
+    },
+    "about": {
+      "title": "\u00c0 propos",
+      "description": "\u00c9tudiant en M1 Informatique et d\u00e9veloppeur full-stack orient\u00e9 backend bas\u00e9 \u00e0 Antananarivo, Madagascar."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactez-moi pour un poste de d\u00e9veloppeur full-stack ou une mission freelance backend."
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "\u00c0 propos",
+    "contact": "Contact",
+    "resume": "CV",
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "theme": {
+    "light": "Passer au th\u00e8me clair",
+    "dark": "Passer au th\u00e8me sombre"
+  },
+  "locale": {
+    "label": "Langue"
+  },
+  "home": {
+    "eyebrow": "D\u00e9veloppeur Full-Stack orient\u00e9 Backend",
+    "headline": "Mandrindra Antonnio — d\u00e9veloppeur logiciel, je con\u00e7ois des <i>syst\u00e8mes con\u00e7us pour tenir</i> sous charge r\u00e9elle.",
+    "subhead": "Backend d'abord, full-stack en pratique — NestJS, FastAPI, Next.js et PostgreSQL, le tout dans Docker et livr\u00e9 via CI/CD. Actuellement en M1 Informatique tout en construisant et livrant des syst\u00e8mes en production.",
+    "ctaPrimary": "Voir les projets",
+    "ctaSecondary": "\u00c0 propos de moi",
+    "systemsEyebrow": "\u00c9tudes de Cas Techniques",
+    "systemsTitle": "Syst\u00e8mes S\u00e9lectionn\u00e9s",
+    "systemsLink": "Tous les projets",
+    "philosophyTitle": "Une philosophie de la rigueur.",
+    "philosophyBody": "L'ing\u00e9nierie ne consiste pas seulement \u00e0 \u00e9crire du code, mais \u00e0 concevoir des solutions p\u00e9rennes. Mon approche allie rigueur technique et une capacit\u00e9 \u00e0 apprendre vite\u202f: ma\u00eetriser une nouvelle stack, un framework ou un protocole d\u00e8s que le projet l'exige, puis le prouver en production.",
+    "principle1Title": "Architecture Robuste",
+    "principle1Body": "Concevoir des syst\u00e8mes pr\u00e9visibles sous charge \u2014 API typ\u00e9es, couches de donn\u00e9es asynchrones, et une infrastructure qui \u00e9choue bruyamment plut\u00f4t que silencieusement.",
+    "principle2Title": "Apprentissage Continu",
+    "principle2Body": "Combler les lacunes d\u00e9lib\u00e9r\u00e9ment \u2014 des structures de donn\u00e9es en autodidacte aux d\u00e9fis CTF \u2014 pour suivre des probl\u00e8mes que le cursus n'a pas encore rattrap\u00e9s.",
+    "ctaEyebrow": "Ouvert aux nouvelles opportunit\u00e9s",
+    "ctaHeadline": "Construisons quelque chose de <i>fiable</i>, ensemble.",
+    "ctaEmailLabel": "Dites bonjour"
+  },
+  "projects": {
+    "eyebrow": "Portfolio Technique",
+    "title": "Des syst\u00e8mes backend, construits avec pr\u00e9cision technique.",
+    "subhead": "Un aper\u00e7u des plateformes full-stack, missions, outils pour d\u00e9veloppeurs et d\u00e9fis CTF qui gardent les fondamentaux affut\u00e9s.",
+    "statusLabel": "Statut",
+    "stackLabel": "Stack",
+    "viewRepo": "Voir le d\u00e9p\u00f4t",
+    "ctaTitle": "Construisons le prochain.",
+    "ctaBody": "Ouvert aux postes de d\u00e9veloppeur full-stack et backend \u00e0 Antananarivo, ainsi qu'\u00e0 des missions freelance cibl\u00e9es.",
+    "ctaPrimary": "Me contacter",
+    "ctaSecondary": "Voir la stack"
+  },
+  "about": {
+    "eyebrow": "L'ing\u00e9nieur derri\u00e8re les syst\u00e8mes",
+    "headline": "Guid\u00e9 par la logique, d\u00e9fini par la <i>rigueur</i>.",
+    "introTitle": "\u00c9tudiant en M1 Informatique qui construit des syst\u00e8mes en production, pas seulement pour les cours.",
+    "bioP1": "Je suis \u00e9tudiant en M1 Informatique, parcours MISA, \u00e0 l'Universit\u00e9 d'Antananarivo, avec un profil full-stack centr\u00e9 sur l'ing\u00e9nierie backend — NestJS, FastAPI, Next.js, PostgreSQL et Docker, reli\u00e9s par du CI/CD.",
+    "bioP2": "Ma licence \u00e9tait orient\u00e9e r\u00e9seaux — TCP/IP, Linux, analyse de paquets — sans cursus formel en structures de donn\u00e9es. Je comble donc cet \u00e9cart d\u00e9lib\u00e9r\u00e9ment\u202f: algorithmes, th\u00e9orie des graphes et analyse de complexit\u00e9 en autodidacte, en pr\u00e9paration d'ambitions orient\u00e9es recherche en M2 et au-del\u00e0.",
+    "bioP3": "En dehors des cours, je participe \u00e0 des CTF, je joue aux \u00e9checs, et je construis en public \u2014 d'un monorepo \u00ab\u202fOS \u00e9tudiant\u202f\u00bb complet \u00e0 un CLI qui traduit le langage naturel en commandes shell.",
+    "skillsEyebrow": "Expertise",
+    "skillsTitle": "Comp\u00e9tences & Technologies",
+    "skillsCol1Title": "Ing\u00e9nierie Logicielle",
+    "skillsCol2Title": "DevOps & Infrastructure",
+    "skillsCol3Title": "Outils & M\u00e9thodologie",
+    "philosophyQuote": "Une bonne ing\u00e9nierie commence par comprendre le syst\u00e8me, pas seulement livrer la fonctionnalit\u00e9.",
+    "philosophyBody": "Je pr\u00e9f\u00e8re passer une heure de plus \u00e0 lire l'erreur qu'une semaine de plus \u00e0 d\u00e9boguer en production. Simplicit\u00e9, hypoth\u00e8ses test\u00e9es, et l'habitude d'apprendre l'outil avant de s'en servir \u2014 c'est toute la m\u00e9thode.",
+    "ctaTitle": "Envie de collaborer\u202f?",
+    "ctaLink": "Me contacter"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "headline": "Construisons quelque chose de fiable.",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Rakoto",
+      "email": "E-mail professionnel",
+      "emailPlaceholder": "vous@entreprise.com",
+      "message": "P\u00e9rim\u00e8tre du projet",
+      "messagePlaceholder": "D\u00e9crivez le poste, le projet ou les besoins techniques...",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours\u2026",
+      "success": "Message envoy\u00e9 — r\u00e9ponse \u00e0 venir.",
+      "error": "Une erreur s'est produite. R\u00e9essayez, ou \u00e9crivez directement ci-dessous."
+    },
+    "directTitle": "Communication Directe",
+    "directBody": "Bas\u00e9 \u00e0 Antananarivo, Madagascar. GMT+3. Ouvert aux postes de d\u00e9veloppeur full-stack et aux missions freelance backend cibl\u00e9es.",
+    "presenceTitle": "Pr\u00e9sence Technique",
+    "github": "GitHub",
+    "portfolio": "Portfolio",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "tagline": "Construire des syst\u00e8mes backend avec pr\u00e9cision technique.",
+    "navTitle": "Explorer",
+    "connectTitle": "Suivre",
+    "rights": "\u00a9 {year} Mandrindra. Construit avec intention."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Cette route n'existe pas.",
+    "body": "La page que vous cherchez a \u00e9t\u00e9 d\u00e9plac\u00e9e, ou n'a jamais exist\u00e9.",
+    "cta": "Retour \u00e0 l'accueil"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "titleTemplate": "%s | Mandrindra",
+    "home": {
+      "title": "Mandrindra — Software Developer",
+      "description": "Backend-focused full-stack developer building resilient systems with NestJS, FastAPI, Next.js and PostgreSQL."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Full-stack platforms, contract work, developer tooling and CTF challenges."
+    },
+    "about": {
+      "title": "About",
+      "description": "M1 Informatique student and backend-focused full-stack developer based in Antananarivo, Madagascar."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch about full-stack developer roles or freelance backend work."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "resume": "Resume",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "theme": {
+    "light": "Switch to light theme",
+    "dark": "Switch to dark theme"
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "home": {
+    "eyebrow": "Backend-Focused Full-Stack Developer",
+    "headline": "Mandrindra Antonnio — software developer, <i>systems built to hold up</i> under real load.",
+    "subhead": "Backend-first, full-stack in practice — NestJS, FastAPI, Next.js and PostgreSQL, wrapped in Docker and shipped through CI/CD. Currently completing an M1 in Computer Science while building and shipping production systems.",
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "About Me",
+    "systemsEyebrow": "Engineering Case Studies",
+    "systemsTitle": "Selected Systems",
+    "systemsLink": "All Projects",
+    "philosophyTitle": "A philosophy of rigor.",
+    "philosophyBody": "Engineering isn't just about writing code — it's about designing solutions built to last. My approach pairs technical discipline with a habit of learning fast: picking up a new stack, framework, or protocol as the project demands it, then proving it in production.",
+    "principle1Title": "Robust Architecture",
+    "principle1Body": "Designing systems that stay predictable under load — typed APIs, async data layers, and infrastructure that fails loudly instead of silently.",
+    "principle2Title": "Continuous Learning",
+    "principle2Body": "Filling gaps deliberately — from self-taught data structures and algorithms to CTF challenges — to keep pace with problems the curriculum hasn't caught up to yet.",
+    "ctaEyebrow": "Open to new roles",
+    "ctaHeadline": "Let's build something <i>reliable</i> together.",
+    "ctaEmailLabel": "Say hello"
+  },
+  "projects": {
+    "eyebrow": "Engineering Portfolio",
+    "title": "Backend systems, built with technical precision.",
+    "subhead": "A look at full-stack platforms, contract work, developer tooling and the CTF challenges that keep the fundamentals sharp.",
+    "statusLabel": "Status",
+    "stackLabel": "Stack",
+    "viewRepo": "View Repository",
+    "ctaTitle": "Let's build the next one.",
+    "ctaBody": "Open to full-stack and backend developer roles in Antananarivo, and to focused freelance work.",
+    "ctaPrimary": "Get in Touch",
+    "ctaSecondary": "See the Stack"
+  },
+  "about": {
+    "eyebrow": "The Engineer Behind the Systems",
+    "headline": "Driven by logic, defined by <i>rigor</i>.",
+    "introTitle": "M1 Informatique student building production systems on the side, not just for class.",
+    "bioP1": "I'm an M1 Informatique student on the MISA track at the Universit\u00e9 d'Antananarivo, with a fullstack profile centered on backend engineering — NestJS, FastAPI, Next.js, PostgreSQL and Docker, wired together with CI/CD.",
+    "bioP2": "My bachelor's focused on networking — TCP/IP, Linux, packet analysis — without a formal data-structures curriculum, so I've been filling that gap deliberately: self-studying algorithms, graph theory and complexity analysis to prepare for research-track ambitions at M2 and beyond.",
+    "bioP3": "Outside coursework, I compete in CTF challenges, play chess, and build in the open — from a full \u201cstudent OS\u201d monorepo to a CLI that turns plain language into shell commands.",
+    "skillsEyebrow": "Expertise",
+    "skillsTitle": "Core Skills & Technologies",
+    "skillsCol1Title": "Software Engineering",
+    "skillsCol2Title": "DevOps & Infrastructure",
+    "skillsCol3Title": "Tools & Methodology",
+    "philosophyQuote": "Good engineering starts with understanding the system, not just shipping the feature.",
+    "philosophyBody": "I'd rather spend an extra hour reading the error than an extra week debugging in production. Simplicity, tested assumptions, and a habit of learning the tool before reaching for it — that's the whole method.",
+    "ctaTitle": "Looking for a collaboration?",
+    "ctaLink": "Get in touch"
+  },
+  "contact": {
+    "eyebrow": "Inquiries",
+    "headline": "Let's build something reliable.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Rakoto",
+      "email": "Work Email",
+      "emailPlaceholder": "you@company.com",
+      "message": "Project Scope",
+      "messagePlaceholder": "Describe the role, project, or technical requirements...",
+      "submit": "Send Message",
+      "submitting": "Sending\u2026",
+      "success": "Message sent — I'll reply soon.",
+      "error": "Something went wrong. Try again, or email directly below."
+    },
+    "directTitle": "Direct Communication",
+    "directBody": "Based in Antananarivo, Madagascar. GMT+3. Open to full-stack developer roles and focused freelance backend work.",
+    "presenceTitle": "Technical Presence",
+    "github": "GitHub",
+    "portfolio": "Portfolio",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "tagline": "Building backend systems with technical precision.",
+    "navTitle": "Explore",
+    "connectTitle": "Connect",
+    "rights": "\u00a9 {year} Mandrindra. Built with intent."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "This route doesn't resolve.",
+    "body": "The page you're looking for has moved, or never existed.",
+    "cta": "Back to home"
+  }
+}
