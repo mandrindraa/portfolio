@@ -24,20 +24,20 @@ const richComponents = {
 const skillGroups = [
   {
     titleKey: "skillsCol1Title" as const,
-    items: ["NestJS", "FastAPI", "Next.js / React", "PostgreSQL"],
+    items: ["TS / JS", "Python", "Next.js / React", "PostgreSQL", "MongoDB"],
   },
   {
     titleKey: "skillsCol2Title" as const,
-    items: [
-      "Docker",
-      "CI/CD (GitHub Actions)",
-      "DigitalOcean & Dokploy",
-      "Linux (CachyOS)",
-    ],
+    items: ["Docker", "CI/CD (GitHub Actions)", "IaC", "Linux"],
   },
   {
     titleKey: "skillsCol3Title" as const,
-    items: ["Git & GitHub", "Turborepo Monorepos", "Async APIs & Testing"],
+    items: [
+      "Git & GitHub",
+      "Turborepo Monorepos",
+      "Async APIs & Testing",
+      "Agile",
+    ],
   },
 ];
 
