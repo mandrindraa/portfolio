@@ -36,7 +36,7 @@
   },
   "home": {
     "eyebrow": "D\u00e9veloppeur Full-Stack orient\u00e9 Backend",
-    "headline": "Mandrindra Antonnio — d\u00e9veloppeur logiciel, je con\u00e7ois des <i>syst\u00e8mes con\u00e7us pour tenir</i> sous charge r\u00e9elle.",
+    "headline": "RAMAHAZOMANANA Mandrindra Antonnio — d\u00e9veloppeur logiciel.",
     "subhead": "Backend d'abord, full-stack en pratique — NestJS, FastAPI, Next.js et PostgreSQL, le tout dans Docker et livr\u00e9 via CI/CD. Actuellement en M1 Informatique tout en construisant et livrant des syst\u00e8mes en production.",
     "ctaPrimary": "Voir les projets",
     "ctaSecondary": "\u00c0 propos de moi",
@@ -55,7 +55,7 @@
   },
   "projects": {
     "eyebrow": "Portfolio Technique",
-    "title": "Des syst\u00e8mes backend, construits avec pr\u00e9cision technique.",
+    "title": "Des syst\u00e8mes construits avec pr\u00e9cision technique.",
     "subhead": "Un aper\u00e7u des plateformes full-stack, missions, outils pour d\u00e9veloppeurs et d\u00e9fis CTF qui gardent les fondamentaux affut\u00e9s.",
     "statusLabel": "Statut",
     "stackLabel": "Stack",
@@ -70,7 +70,7 @@
     "headline": "Guid\u00e9 par la logique, d\u00e9fini par la <i>rigueur</i>.",
     "introTitle": "\u00c9tudiant en M1 Informatique qui construit des syst\u00e8mes en production, pas seulement pour les cours.",
     "bioP1": "Je suis \u00e9tudiant en M1 Informatique, parcours MISA, \u00e0 l'Universit\u00e9 d'Antananarivo, avec un profil full-stack centr\u00e9 sur l'ing\u00e9nierie backend — NestJS, FastAPI, Next.js, PostgreSQL et Docker, reli\u00e9s par du CI/CD.",
-    "bioP2": "Ma licence \u00e9tait orient\u00e9e r\u00e9seaux — TCP/IP, Linux, analyse de paquets — sans cursus formel en structures de donn\u00e9es. Je comble donc cet \u00e9cart d\u00e9lib\u00e9r\u00e9ment\u202f: algorithmes, th\u00e9orie des graphes et analyse de complexit\u00e9 en autodidacte, en pr\u00e9paration d'ambitions orient\u00e9es recherche en M2 et au-del\u00e0.",
+    "bioP2": "Ma licence \u00e9tait orient\u00e9e r\u00e9seaux — TCP/IP, Linux, analyse de paquets. Je comble donc cet \u00e9cart d\u00e9lib\u00e9r\u00e9ment\u202f: algorithmes, th\u00e9orie des graphes et analyse de complexit\u00e9 en autodidacte, en pr\u00e9paration d'ambitions orient\u00e9es recherche en M2 et au-del\u00e0.",
     "bioP3": "En dehors des cours, je participe \u00e0 des CTF, je joue aux \u00e9checs, et je construis en public \u2014 d'un monorepo \u00ab\u202fOS \u00e9tudiant\u202f\u00bb complet \u00e0 un CLI qui traduit le langage naturel en commandes shell.",
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Comp\u00e9tences & Technologies",

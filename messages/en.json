@@ -36,7 +36,7 @@
   },
   "home": {
     "eyebrow": "Backend-Focused Full-Stack Developer",
-    "headline": "Mandrindra Antonnio — software developer, <i>systems built to hold up</i> under real load.",
+    "headline": "RAMAHAZOMANANA Mandrindra Antonnio — software developer",
     "subhead": "Backend-first, full-stack in practice — NestJS, FastAPI, Next.js and PostgreSQL, wrapped in Docker and shipped through CI/CD. Currently completing an M1 in Computer Science while building and shipping production systems.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "About Me",
@@ -55,7 +55,7 @@
   },
   "projects": {
     "eyebrow": "Engineering Portfolio",
-    "title": "Backend systems, built with technical precision.",
+    "title": "Systems built with technical precision.",
     "subhead": "A look at full-stack platforms, contract work, developer tooling and the CTF challenges that keep the fundamentals sharp.",
     "statusLabel": "Status",
     "stackLabel": "Stack",
@@ -70,7 +70,7 @@
     "headline": "Driven by logic, defined by <i>rigor</i>.",
     "introTitle": "M1 Informatique student building production systems on the side, not just for class.",
     "bioP1": "I'm an M1 Informatique student on the MISA track at the Universit\u00e9 d'Antananarivo, with a fullstack profile centered on backend engineering — NestJS, FastAPI, Next.js, PostgreSQL and Docker, wired together with CI/CD.",
-    "bioP2": "My bachelor's focused on networking — TCP/IP, Linux, packet analysis — without a formal data-structures curriculum, so I've been filling that gap deliberately: self-studying algorithms, graph theory and complexity analysis to prepare for research-track ambitions at M2 and beyond.",
+    "bioP2": "My bachelor's focused on networking — TCP/IP, Linux, packet analysis, so I've been filling that gap deliberately: self-studying algorithms, graph theory and complexity analysis to prepare for research-track ambitions at M2 and beyond.",
     "bioP3": "Outside coursework, I compete in CTF challenges, play chess, and build in the open — from a full \u201cstudent OS\u201d monorepo to a CLI that turns plain language into shell commands.",
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Core Skills & Technologies",
