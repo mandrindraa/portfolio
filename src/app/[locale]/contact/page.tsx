@@ -21,7 +21,7 @@ export default async function ContactPage() {
 
   return (
     <section className="container-max px-page mx-auto grid grid-cols-1 gap-16 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
-      <div className="flex flex-col gap-10">
+      <div className="flex min-w-0 flex-col gap-10">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="max-w-xl font-display text-4xl leading-[1.1] text-primary md:text-display">
           {t("headline")}
@@ -29,14 +29,14 @@ export default async function ContactPage() {
         <ContactForm />
       </div>
 
-      <div className="flex flex-col gap-14 lg:pt-32">
+      <div className="flex min-w-0 flex-col gap-14 lg:pt-32">
         <div className="flex flex-col gap-3 border-t border-outline-variant pt-8">
           <span className="text-label-caps text-on-surface-variant">
             {t("directTitle")}
           </span>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="font-display text-headline-md text-primary transition-colors hover:text-secondary"
+            className="break-all font-display text-headline-md text-primary transition-colors hover:text-secondary"
           >
             {siteConfig.email}
           </a>

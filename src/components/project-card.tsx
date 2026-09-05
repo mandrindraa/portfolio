@@ -20,7 +20,7 @@ export function ProjectCard({
   const t = useTranslations("projects");
 
   return (
-    <article className={clsx("group", className)}>
+    <article className={clsx("group min-w-0", className)}>
       <div
         className={clsx(
           "relative mb-6 overflow-hidden bg-surface-container-low",

@@ -43,10 +43,10 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-outline-variant/40 bg-surface/90 backdrop-blur-xl">
-      <div className="container-max px-page mx-auto flex h-20 items-center justify-between">
+      <div className="container-max px-page mx-auto flex h-20 min-w-0 items-center justify-between">
         <Link
           href="/"
-          className="font-display text-headline-md tracking-tight text-primary transition-opacity hover:opacity-80"
+          className="min-w-0 truncate font-display text-headline-md tracking-tight text-primary transition-opacity hover:opacity-80"
         >
           {siteConfig.name}
         </Link>
@@ -74,8 +74,8 @@ export function Navbar() {
             })}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <div className="hidden md:block">
+        <div className="flex shrink-0 items-center gap-3">
+          <div className="hidden shrink-0 md:block">
             <LocaleSwitcher />
           </div>
           <ThemeToggle />
@@ -104,7 +104,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="border-t border-outline-variant/40 bg-surface px-page py-8 md:hidden">
+        <div className="motion-safe:animate-[mobile-menu-in_180ms_ease-out] border-t border-outline-variant/40 bg-surface px-page py-8 md:hidden">
           <nav className="flex flex-col gap-6">
             {links
               .filter((l) => l.showInNav)
