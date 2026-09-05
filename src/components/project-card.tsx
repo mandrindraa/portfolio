@@ -2,6 +2,7 @@ import type { Project } from "@/lib/projects";
 import clsx from "clsx";
 import { ArrowUpRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { ProjectGlyph } from "./project-glyph";
 
 interface ProjectCardProps {
   project: Project;
@@ -32,6 +33,9 @@ export function ProjectCard({
             alt={project.title[locale]}
             className="h-full w-full object-cover transition-transform group-hover:scale-105"
           />
+        )}
+        {!project.image && project.glyph && (
+          <ProjectGlyph variant={project.glyph} />
         )}
       </div>
       <div className="flex flex-col gap-2">
