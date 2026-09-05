@@ -19,7 +19,7 @@ export const siteConfig = {
   email: "mandrindraantonnio@gmail.com",
   github: "https://github.com/mandrindraa",
   githubHandle: "mandrindraa",
-  portfolio: "https://mandrindraa.vercel.app",
+  portfolio: "https://mandrindraa.is-a.dev",
   // TODO: add if/when public — omitted from the UI until then.
   linkedin: "https://linkedin.com/in/mandrindra-antonnio",
 } as const;

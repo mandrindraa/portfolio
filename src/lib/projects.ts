@@ -148,7 +148,7 @@ export const projects: Project[] = [
     status: { en: "Completed", fr: "Termin\u00e9" },
   },
   {
-    slug: "prodigy-2026",
+    slug: "cirt-mdg-2026",
     glyph: "flag",
     homeSpan: 12,
     year: "2026",
@@ -156,14 +156,14 @@ export const projects: Project[] = [
       en: "Security / CTF",
       fr: "S\u00e9curit\u00e9 / CTF",
     },
-    title: { en: "PRODIGY 2026 CTF", fr: "CTF PRODIGY 2026" },
+    title: { en: "CIRT MDG 2026 CTF", fr: "CTF CIRT-MDG 2026" },
     summary: {
       en: "Two days of binary exploitation, forensics and network challenges.",
       fr: "Deux jours d'exploitation binaire, de forensics et de d\u00e9fis r\u00e9seau.",
     },
     description: {
-      en: "Competed in PRODIGY 2026, CIRT-MDG's capture-the-flag hackathon at Novotel Antananarivo, working through binary exploitation, steganography, forensics, and network challenges.",
-      fr: "Participation \u00e0 PRODIGY 2026, le hackathon capture-the-flag du CIRT-MDG au Novotel Antananarivo\u202f: exploitation binaire, st\u00e9ganographie, forensics et d\u00e9fis r\u00e9seau.",
+      en: "Top 10 in CIRT-MDG's 2026 capture-the-flag hackathon at Novotel Antananarivo, working through binary exploitation, steganography, forensics, and network challenges.",
+      fr: "Top 10 au CIRT-MDG , le hackathon capture-the-flag du CIRT-MDG au Novotel Antananarivo\u202f: exploitation binaire, st\u00e9ganographie, forensics et d\u00e9fis r\u00e9seau.",
     },
     stack: ["Binary Exploitation", "Forensics", "Networking", "Steganography"],
     status: { en: "CIRT-MDG, June 2026", fr: "CIRT-MDG, juin 2026" },
