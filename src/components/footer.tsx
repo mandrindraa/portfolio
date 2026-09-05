@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site-config";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -52,6 +52,14 @@ export function Footer() {
             </span>
             <div className="flex flex-col gap-3">
               <a
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-body-md text-on-surface-variant transition-colors hover:text-on-surface hover:underline"
+              >
+                LinkedIn
+              </a>
+              <a
                 href={siteConfig.github}
                 target="_blank"
                 rel="noreferrer noopener"
@@ -71,7 +79,7 @@ export function Footer() {
                 href={`mailto:${siteConfig.email}`}
                 className="text-body-md text-on-surface-variant transition-colors hover:text-on-surface hover:underline"
               >
-                {siteConfig.email}
+                Email
               </a>
             </div>
           </div>
