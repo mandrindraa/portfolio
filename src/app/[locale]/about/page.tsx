@@ -96,9 +96,7 @@ export default async function AboutPage() {
               key={`${entry.period}-${entry.role}`}
               className="grid grid-cols-1 gap-5 border-b border-outline-variant py-8 md:grid-cols-[8rem_1fr] md:gap-10"
             >
-              <p className="text-label-caps text-secondary">
-                {entry.period}
-              </p>
+              <p className="text-label-caps text-secondary">{entry.period}</p>
               <div className="flex flex-col gap-3">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
                   <h3 className="font-display text-headline-md text-primary">
