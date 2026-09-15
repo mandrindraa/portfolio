@@ -1,7 +1,7 @@
 import { BlueprintPanel } from "@/components/blueprint-panel";
 import { Eyebrow } from "@/components/eyebrow";
 import { Link } from "@/i18n/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
@@ -41,6 +41,27 @@ const skillGroups = [
   },
 ];
 
+const experienceEntries = [
+  {
+    periodKey: "experience1Period",
+    roleKey: "experience1Role",
+    companyKey: "experience1Company",
+    bodyKey: "experience1Body",
+  },
+  {
+    periodKey: "experience2Period",
+    roleKey: "experience2Role",
+    companyKey: "experience2Company",
+    bodyKey: "experience2Body",
+  },
+  {
+    periodKey: "experience3Period",
+    roleKey: "experience3Role",
+    companyKey: "experience3Company",
+    bodyKey: "experience3Body",
+  },
+] as const;
+
 export default async function AboutPage() {
   const t = await getTranslations("about");
 
@@ -62,6 +83,78 @@ export default async function AboutPage() {
           <p className="text-body-lg text-on-surface-variant">{t("bioP1")}</p>
           <p className="text-body-lg text-on-surface-variant">{t("bioP2")}</p>
           <p className="text-body-lg text-on-surface-variant">{t("bioP3")}</p>
+        </div>
+      </section>
+
+      <section className="container-max px-page mx-auto py-24">
+        <div className="mb-14 flex flex-col gap-3">
+          <Eyebrow>{t("experienceEyebrow")}</Eyebrow>
+          <h2 className="font-display text-headline-lg text-primary">
+            {t("experienceTitle")}
+          </h2>
+        </div>
+        <div className="border-t border-outline-variant">
+          {experienceEntries.map((entry) => (
+            <article
+              key={entry.roleKey}
+              className="grid grid-cols-1 gap-5 border-b border-outline-variant py-8 md:grid-cols-[8rem_1fr] md:gap-10"
+            >
+              <p className="text-label-caps text-secondary">
+                {t(entry.periodKey)}
+              </p>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                  <h3 className="font-display text-headline-md text-primary">
+                    {t(entry.roleKey)}
+                  </h3>
+                  <span className="text-label-md text-on-surface-variant">
+                    {t(entry.companyKey)}
+                  </span>
+                </div>
+                <p className="max-w-3xl text-body-md text-on-surface-variant">
+                  {t(entry.bodyKey)}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-surface-container-low py-24">
+        <div className="container-max px-page mx-auto flex flex-col gap-14">
+          <div className="flex flex-col gap-3">
+            <Eyebrow>{t("certificationsEyebrow")}</Eyebrow>
+            <h2 className="font-display text-headline-lg text-primary">
+              {t("certificationsTitle")}
+            </h2>
+          </div>
+          <article
+            className="flex flex-col gap-8 bg-surface-container-lowest p-8 md:flex-row md:items-end md:justify-between md:gap-12"
+            style={{ borderRadius: "var(--radius-card)" }}
+          >
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <h3 className="font-display text-headline-md text-primary">
+                  {t("certificationTitle")}
+                </h3>
+                <span className="text-label-caps text-secondary">
+                  {t("certificationDate")}
+                </span>
+              </div>
+              <p className="text-body-md text-on-surface-variant">
+                {t("certificationIssuer")} · {t("certificationNumber")}
+              </p>
+            </div>
+            <a
+              href="https://www.codingame.com/certification/11GNVmg-AztBBNYOflMI9Q"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex shrink-0 items-center gap-2 text-label-md text-secondary underline decoration-secondary/40 underline-offset-4 transition-colors hover:decoration-secondary"
+            >
+              {t("certificationLink")}
+              <ExternalLink className="h-4 w-4" strokeWidth={1.5} />
+            </a>
+          </article>
         </div>
       </section>
 
