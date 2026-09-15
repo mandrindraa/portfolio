@@ -1,7 +1,8 @@
-import type { Project } from "@/lib/projects";
+import { Project } from "@/lib/projects";
 import clsx from "clsx";
 import { ArrowUpRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { ProjectGlyph } from "./project-glyph";
 
 interface ProjectCardProps {
@@ -28,7 +29,7 @@ export function ProjectCard({
         )}
       >
         {project.image && (
-          <img
+          <Image
             src={project.image}
             alt={project.title[locale]}
             className="h-full w-full object-cover transition-transform group-hover:scale-105"

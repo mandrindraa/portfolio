@@ -74,25 +74,38 @@
     "bioP3": "Outside coursework, I compete in CTF challenges, play chess, and build in the open — from a full \u201cstudent OS\u201d monorepo to a CLI that turns plain language into shell commands.",
     "experienceEyebrow": "Experience",
     "experienceTitle": "Work shaped by real systems.",
-    "experience1Period": "2025 — Present",
-    "experience1Role": "Independent Software Developer",
-    "experience1Company": "Personal products & open source",
-    "experience1Body": "Building and shipping full-stack products across web, mobile and backend surfaces, with a focus on reliable APIs, async data flows and production-ready infrastructure.",
-    "experience2Period": "2025",
-    "experience2Role": "Contract Software Developer",
-    "experience2Company": "Client engagements",
-    "experience2Body": "Delivered backend and platform work for education and media products, including production debugging, security hardening, CI/CD and deployment workflows.",
-    "experience3Period": "2025",
-    "experience3Role": "Developer",
-    "experience3Company": "IOMAD LMS contractor team",
-    "experience3Body": "Contributed to a multi-tenant Moodle LMS through plugin management, Git Flow collaboration and GitHub Actions pipelines.",
+    "experience": [
+      {
+        "period": "2025 — Present",
+        "role": "Independent Software Developer",
+        "company": "Personal products & open source",
+        "body": "Building and shipping full-stack products across web, mobile and backend surfaces, with a focus on reliable APIs, async data flows and production-ready infrastructure."
+      },
+      {
+        "period": "2025",
+        "role": "Contract Software Developer",
+        "company": "Client engagements",
+        "body": "Delivered backend and platform work for education and media products, including production debugging, security hardening, CI/CD and deployment workflows."
+      },
+      {
+        "period": "2025",
+        "role": "Developer",
+        "company": "IOMAD LMS contractor team",
+        "body": "Contributed to a multi-tenant Moodle LMS through plugin management, Git Flow collaboration and GitHub Actions pipelines."
+      }
+    ],
     "certificationsEyebrow": "Credentials",
     "certificationsTitle": "Certified problem solving.",
-    "certificationTitle": "JavaScript Certification",
-    "certificationDate": "June 18, 2026",
-    "certificationIssuer": "CodinGame",
-    "certificationNumber": "Certificate N° 10602344",
-    "certificationLink": "Verify certificate",
+    "certifications": [
+      {
+        "title": "JavaScript Certification",
+        "date": "June 18, 2026",
+        "issuer": "CodinGame",
+        "number": "Certificate N° 10602344",
+        "linkLabel": "Verify certificate",
+        "url": "https://www.codingame.com/certification/11GNVmg-AztBBNYOflMI9Q"
+      }
+    ],
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Core Skills & Technologies",
     "skillsCol1Title": "Software Engineering",

@@ -74,25 +74,38 @@
     "bioP3": "En dehors des cours, je participe \u00e0 des CTF, je joue aux \u00e9checs, et je construis en public \u2014 d'un monorepo \u00ab\u202fOS \u00e9tudiant\u202f\u00bb complet \u00e0 un CLI qui traduit le langage naturel en commandes shell.",
     "experienceEyebrow": "Expérience",
     "experienceTitle": "Un parcours façonné par des systèmes réels.",
-    "experience1Period": "2025 — Aujourd'hui",
-    "experience1Role": "Développeur logiciel indépendant",
-    "experience1Company": "Produits personnels & open source",
-    "experience1Body": "Conception et livraison de produits full-stack web, mobile et backend, avec une attention particulière portée aux API fiables, aux flux de données asynchrones et à une infrastructure prête pour la production.",
-    "experience2Period": "2025",
-    "experience2Role": "Développeur logiciel freelance",
-    "experience2Company": "Missions clients",
-    "experience2Body": "Réalisation de travaux backend et plateforme pour des produits éducatifs et média, notamment du debug en production, du durcissement sécurité, du CI/CD et des workflows de déploiement.",
-    "experience3Period": "2025",
-    "experience3Role": "Développeur",
-    "experience3Company": "Équipe prestataire IOMAD LMS",
-    "experience3Body": "Contribution à un LMS Moodle multi-tenant via la gestion de plugins, la collaboration Git Flow et des pipelines GitHub Actions.",
+    "experience": [
+      {
+        "period": "2025 — Aujourd'hui",
+        "role": "Développeur logiciel indépendant",
+        "company": "Produits personnels & open source",
+        "body": "Conception et livraison de produits full-stack web, mobile et backend, avec une attention particulière portée aux API fiables, aux flux de données asynchrones et à une infrastructure prête pour la production."
+      },
+      {
+        "period": "2025",
+        "role": "Développeur logiciel freelance",
+        "company": "Missions clients",
+        "body": "Réalisation de travaux backend et plateforme pour des produits éducatifs et média, notamment du debug en production, du durcissement sécurité, du CI/CD et des workflows de déploiement."
+      },
+      {
+        "period": "2025",
+        "role": "Développeur",
+        "company": "Équipe prestataire IOMAD LMS",
+        "body": "Contribution à un LMS Moodle multi-tenant via la gestion de plugins, la collaboration Git Flow et des pipelines GitHub Actions."
+      }
+    ],
     "certificationsEyebrow": "Certifications",
     "certificationsTitle": "Une pratique validée.",
-    "certificationTitle": "Certification JavaScript",
-    "certificationDate": "18 juin 2026",
-    "certificationIssuer": "CodinGame",
-    "certificationNumber": "Certificat n° 10602344",
-    "certificationLink": "Vérifier le certificat",
+    "certifications": [
+      {
+        "title": "Certification JavaScript",
+        "date": "18 juin 2026",
+        "issuer": "CodinGame",
+        "number": "Certificat n° 10602344",
+        "linkLabel": "Vérifier le certificat",
+        "url": "https://www.codingame.com/certification/11GNVmg-AztBBNYOflMI9Q"
+      }
+    ],
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Comp\u00e9tences & Technologies",
     "skillsCol1Title": "Ing\u00e9nierie Logicielle",
