@@ -19,7 +19,7 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="container-max px-page mx-auto flex flex-col gap-10 pb-24 pt-20 md:pt-28">
+      <section className="glass-panel container-max px-page mx-auto flex flex-col gap-10 px-6 pb-24 pt-14 md:px-14 md:pt-20">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="max-w-4xl font-display text-4xl leading-[1.08] tracking-tight text-primary sm:text-5xl md:text-display">
           {t.rich("headline", richComponents)}
@@ -30,14 +30,14 @@ export default async function HomePage() {
         <div className="flex flex-wrap items-center gap-4">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 bg-primary px-7 py-3 text-label-md text-on-primary transition-opacity hover:opacity-85"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-label-md text-on-primary transition-transform hover:-translate-y-0.5"
           >
             {t("ctaPrimary")}
             <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
           </Link>
           <Link
             href="/about"
-            className="inline-flex items-center gap-2 border border-outline px-7 py-3 text-label-md text-on-surface transition-colors hover:border-on-surface"
+            className="inline-flex items-center gap-2 rounded-full border border-outline px-7 py-3 text-label-md text-on-surface transition-colors hover:border-on-surface"
           >
             {t("ctaSecondary")}
           </Link>

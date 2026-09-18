@@ -8,7 +8,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-outline-variant bg-surface py-20">
+    <footer className="w-full px-3 pb-3 pt-10 md:px-6">
+      <div className="glass-panel py-16">
       <div className="container-max px-page mx-auto flex flex-col justify-between gap-16 md:flex-row">
         <div className="flex flex-col gap-4">
           <Link href="/" className="font-display text-headline-lg text-primary">
@@ -89,6 +90,7 @@ export function Footer() {
         <p className="text-body-md text-on-surface-variant opacity-80">
           {t("rights", { year })}
         </p>
+      </div>
       </div>
     </footer>
   );

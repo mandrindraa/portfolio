@@ -4,75 +4,72 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ============================================================
-   Aurelian Minimalist (light) — default palette
-   Raw tokens live here; @theme inline below maps them to Tailwind
-   color utilities (bg-surface, text-on-surface, etc).
-   ============================================================ */
+  Mineral Glass (light) — translucent surfaces over a soft field
+  ============================================================ */
 :root {
-  --raw-background: #fbf9fc;
-  --raw-on-background: #1b1b1e;
+  --raw-background: #dce9e7;
+  --raw-on-background: #102a2c;
 
-  --raw-surface: #fbf9fc;
-  --raw-on-surface: #1b1b1e;
-  --raw-surface-variant: #e3e2e5;
-  --raw-on-surface-variant: #444748;
+  --raw-surface: rgba(244, 250, 248, 0.62);
+  --raw-on-surface: #102a2c;
+  --raw-surface-variant: rgba(215, 231, 227, 0.72);
+  --raw-on-surface-variant: #486365;
 
-  --raw-surface-container-lowest: #ffffff;
-  --raw-surface-container-low: #f5f3f6;
-  --raw-surface-container: #efedf0;
-  --raw-surface-container-high: #e9e7eb;
-  --raw-surface-container-highest: #e3e2e5;
+  --raw-surface-container-lowest: rgba(255, 255, 255, 0.72);
+  --raw-surface-container-low: rgba(235, 245, 242, 0.62);
+  --raw-surface-container: rgba(216, 233, 229, 0.68);
+  --raw-surface-container-high: rgba(198, 221, 216, 0.72);
+  --raw-surface-container-highest: rgba(179, 209, 203, 0.78);
 
-  --raw-primary: #121212;
+  --raw-primary: #102a2c;
   --raw-on-primary: #ffffff;
 
-  --raw-secondary: #97742c;
+  --raw-secondary: #e5674f;
   --raw-on-secondary: #ffffff;
-  --raw-secondary-container: #fed488;
-  --raw-on-secondary-container: #4a3810;
+  --raw-secondary-container: #ffc2b4;
+  --raw-on-secondary-container: #5b2118;
 
-  --raw-outline: #747878;
-  --raw-outline-variant: #c4c7c7;
+  --raw-outline: #6f9290;
+  --raw-outline-variant: rgba(255, 255, 255, 0.6);
 
   /* WebGL background: grid lines + mouse glow, tuned for the light theme */
-  --canvas-line: 27, 27, 30;
-  --canvas-line-alpha: 0.05;
-  --canvas-glow: 197, 160, 89; /* muted gold */
-  --canvas-glow-alpha: 0.16;
+  --canvas-line: 16, 42, 44;
+  --canvas-line-alpha: 0.04;
+  --canvas-glow: 229, 103, 79;
+  --canvas-glow-alpha: 0.14;
 
-  /* Shape language: soft in Aurelian */
-  --radius-control: 0.375rem;
-  --radius-card: 0.5rem;
+  --radius-control: 999px;
+  --radius-card: 1.5rem;
 }
 
 /* ============================================================
-   Midnight Engineering (dark) — override palette
+   Deep Tide (dark) — override palette
    ============================================================ */
 .dark {
-  --raw-background: #131313;
-  --raw-on-background: #e5e2e1;
+  --raw-background: #0b2024;
+  --raw-on-background: #e2f3ef;
 
-  --raw-surface: #131313;
-  --raw-on-surface: #e5e2e1;
-  --raw-surface-variant: #353534;
-  --raw-on-surface-variant: #c4c7c8;
+  --raw-surface: rgba(18, 48, 53, 0.6);
+  --raw-on-surface: #e2f3ef;
+  --raw-surface-variant: rgba(37, 76, 80, 0.72);
+  --raw-on-surface-variant: #a8c4c1;
 
-  --raw-surface-container-lowest: #0e0e0e;
-  --raw-surface-container-low: #1c1b1b;
-  --raw-surface-container: #201f1f;
-  --raw-surface-container-high: #2a2a2a;
-  --raw-surface-container-highest: #353534;
+  --raw-surface-container-lowest: rgba(20, 54, 59, 0.76);
+  --raw-surface-container-low: rgba(17, 48, 53, 0.7);
+  --raw-surface-container: rgba(30, 70, 74, 0.74);
+  --raw-surface-container-high: rgba(40, 87, 87, 0.78);
+  --raw-surface-container-highest: rgba(52, 103, 99, 0.82);
 
-  --raw-primary: #ffffff;
-  --raw-on-primary: #1a1a1a;
+  --raw-primary: #e2f3ef;
+  --raw-on-primary: #0b2024;
 
-  --raw-secondary: #c7c6c6;
-  --raw-on-secondary: #2f3131;
-  --raw-secondary-container: #484949;
-  --raw-on-secondary-container: #d4d3d3;
+  --raw-secondary: #ff947d;
+  --raw-on-secondary: #40140d;
+  --raw-secondary-container: #74372d;
+  --raw-on-secondary-container: #ffd9d0;
 
-  --raw-outline: #8e9192;
-  --raw-outline-variant: #444748;
+  --raw-outline: #7fa9a4;
+  --raw-outline-variant: rgba(188, 230, 220, 0.22);
 
   /* WebGL background: grid lines + mouse glow, tuned for the dark theme */
   --canvas-line: 255, 255, 255;
@@ -80,9 +77,8 @@
   --canvas-glow: 92, 140, 255; /* deep blue */
   --canvas-glow-alpha: 0.22;
 
-  /* Shape language: sharp / precision-machined in Midnight */
-  --radius-control: 0px;
-  --radius-card: 0px;
+  --radius-control: 999px;
+  --radius-card: 1.5rem;
 }
 
 @theme inline {
@@ -164,6 +160,15 @@
     color: var(--raw-on-background);
     overflow-x: clip;
     overflow-wrap: anywhere;
+    background-image:
+      radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.56), transparent 30rem),
+      radial-gradient(circle at 92% 18%, rgba(229, 103, 79, 0.16), transparent 26rem);
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(circle at 12% 0%, rgba(79, 164, 153, 0.2), transparent 32rem),
+      radial-gradient(circle at 90% 12%, rgba(229, 103, 79, 0.14), transparent 24rem);
   }
 
   ::selection {
@@ -174,6 +179,29 @@
   :focus-visible {
     outline: 2px solid var(--raw-secondary);
     outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    border: 1px solid var(--raw-outline-variant);
+    border-radius: var(--radius-card);
+    background: var(--raw-surface);
+    box-shadow: 0 1.5rem 4rem rgba(16, 42, 44, 0.08);
+    backdrop-filter: blur(1.25rem);
+  }
+
+  .glass-card {
+    border: 1px solid var(--raw-outline-variant);
+    border-radius: var(--radius-card);
+    background: var(--raw-surface-container-lowest);
+    box-shadow: 0 1rem 3rem rgba(16, 42, 44, 0.07);
+    backdrop-filter: blur(1rem);
+  }
+
+  .dark .glass-panel,
+  .dark .glass-card {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.22);
   }
 }
 

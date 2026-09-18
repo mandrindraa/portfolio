@@ -42,11 +42,11 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-outline-variant/40 bg-surface/90 backdrop-blur-xl">
-      <div className="container-max px-page mx-auto flex h-20 min-w-0 items-center justify-between">
+    <header className="fixed top-0 z-50 w-full px-3 pt-3 md:px-6">
+      <div className="glass-panel container-max px-page mx-auto flex h-16 min-w-0 items-center justify-between px-5 md:px-7">
         <Link
           href="/"
-          className="min-w-0 truncate font-display text-headline-md tracking-tight text-primary transition-opacity hover:opacity-80"
+            className="min-w-0 truncate font-display text-headline-md tracking-tight text-primary transition-opacity hover:opacity-80"
         >
           {siteConfig.name}
         </Link>
@@ -62,10 +62,10 @@ export function Navbar() {
                   href={l.href}
                   aria-current={active ? "page" : undefined}
                   className={clsx(
-                    "pb-1 text-label-md transition-colors",
+                    "rounded-full px-4 py-2 text-label-md transition-colors",
                     active
-                      ? "border-b-2 border-secondary font-semibold text-secondary"
-                      : "text-on-surface-variant hover:text-on-surface",
+                      ? "bg-secondary-container font-semibold text-on-secondary-container"
+                      : "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
                   )}
                 >
                   {t(l.key)}
@@ -83,7 +83,7 @@ export function Navbar() {
             href={resumeHref}
             target="_blank"
             rel="noreferrer noopener"
-            className="hidden items-center px-6 py-2 text-label-md bg-primary text-on-primary transition-opacity hover:opacity-85 md:inline-flex"
+            className="hidden items-center rounded-full bg-primary px-5 py-2.5 text-label-md text-on-primary transition-transform hover:-translate-y-0.5 md:inline-flex"
           >
             {t("resume")}
           </a>
@@ -104,7 +104,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="motion-safe:animate-[mobile-menu-in_180ms_ease-out] border-t border-outline-variant/40 bg-surface px-page py-8 md:hidden">
+        <div className="glass-panel mt-2 motion-safe:animate-[mobile-menu-in_180ms_ease-out] px-page py-8 md:hidden">
           <nav className="flex flex-col gap-6">
             {links
               .filter((l) => l.showInNav)
@@ -124,8 +124,7 @@ export function Navbar() {
               href={resumeHref}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center px-6 py-2 text-label-md bg-primary text-on-primary"
-              style={{ borderRadius: "var(--radius-control)" }}
+                className="inline-flex items-center rounded-full bg-primary px-6 py-2 text-label-md text-on-primary"
             >
               {t("resume")}
             </a>

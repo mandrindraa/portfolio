@@ -20,8 +20,8 @@ export default async function ContactPage() {
   const t = await getTranslations("contact");
 
   return (
-    <section className="container-max px-page mx-auto grid grid-cols-1 gap-16 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
-      <div className="flex min-w-0 flex-col gap-10">
+    <section className="container-max px-page mx-auto grid grid-cols-1 gap-8 py-14 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
+      <div className="glass-panel flex min-w-0 flex-col gap-10 p-7 md:p-12">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="max-w-xl font-display text-4xl leading-[1.1] text-primary md:text-display">
           {t("headline")}
@@ -29,8 +29,8 @@ export default async function ContactPage() {
         <ContactForm />
       </div>
 
-      <div className="flex min-w-0 flex-col gap-14 lg:pt-32">
-        <div className="flex flex-col gap-3 border-t border-outline-variant pt-8">
+      <div className="flex min-w-0 flex-col gap-6 lg:pt-20">
+        <div className="glass-card flex flex-col gap-3 p-8">
           <span className="text-label-caps text-on-surface-variant">
             {t("directTitle")}
           </span>
@@ -45,7 +45,7 @@ export default async function ContactPage() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-outline-variant pt-8">
+        <div className="glass-card flex flex-col gap-4 p-8">
           <span className="text-label-caps text-on-surface-variant">
             {t("presenceTitle")}
           </span>

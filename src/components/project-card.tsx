@@ -21,10 +21,15 @@ export function ProjectCard({
   const t = useTranslations("projects");
 
   return (
-    <article className={clsx("group min-w-0", className)}>
+    <article
+      className={clsx(
+        "glass-card group min-w-0 overflow-hidden p-3",
+        className,
+      )}
+    >
       <div
         className={clsx(
-          "relative mb-6 overflow-hidden bg-surface-container-low",
+          "relative overflow-hidden rounded-[calc(var(--radius-card)-0.35rem)] bg-surface-container-low",
           variant === "home" ? "aspect-4/3" : "aspect-16/10",
         )}
       >
@@ -32,6 +37,8 @@ export function ProjectCard({
           <Image
             src={project.image}
             alt={project.title[locale]}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
             className="h-full w-full object-cover transition-transform group-hover:scale-105"
           />
         )}
@@ -39,7 +46,7 @@ export function ProjectCard({
           <ProjectGlyph variant={project.glyph} />
         )}
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 p-3 pb-4 md:p-4 md:pb-5">
         <div className="flex items-center justify-between gap-4">
           <span className="text-label-caps text-secondary">
             {project.category[locale]} &middot; {project.year}

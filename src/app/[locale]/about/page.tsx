@@ -64,16 +64,16 @@ export default async function AboutPage() {
 
   return (
     <>
-      <section className="container-max px-page mx-auto flex flex-col gap-8 pb-20 pt-20 md:pt-28">
+      <section className="glass-panel container-max px-page mx-auto flex flex-col gap-8 px-6 pb-20 pt-14 md:px-14 md:pt-20">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl leading-[1.1] text-primary md:text-display">
           {t.rich("headline", richComponents)}
         </h1>
       </section>
 
-      <section className="container-max px-page mx-auto grid grid-cols-1 gap-16 pb-24 md:grid-cols-2">
+      <section className="container-max px-page mx-auto grid grid-cols-1 gap-8 pb-24 md:grid-cols-2">
         <BlueprintPanel className="w-full text-on-surface-variant" />
-        <div className="flex flex-col gap-6">
+        <div className="glass-panel flex flex-col gap-6 p-8 md:p-10">
           <h2 className="font-display text-headline-md text-primary">
             {t("introTitle")}
           </h2>
@@ -90,11 +90,11 @@ export default async function AboutPage() {
             {t("experienceTitle")}
           </h2>
         </div>
-        <div className="border-t border-outline-variant">
+        <div className="glass-panel overflow-hidden px-6 md:px-10">
           {experienceEntries.map((entry) => (
             <article
               key={`${entry.period}-${entry.role}`}
-              className="grid grid-cols-1 gap-5 border-b border-outline-variant py-8 md:grid-cols-[8rem_1fr] md:gap-10"
+              className="grid grid-cols-1 gap-5 border-b border-outline-variant py-8 last:border-b-0 md:grid-cols-[8rem_1fr] md:gap-10"
             >
               <p className="text-label-caps text-secondary">{entry.period}</p>
               <div className="flex flex-col gap-3">
@@ -126,8 +126,7 @@ export default async function AboutPage() {
           {certifications.map((certification) => (
             <article
               key={certification.number}
-              className="flex flex-col gap-8 bg-surface-container-lowest p-8 md:flex-row md:items-end md:justify-between md:gap-12"
-              style={{ borderRadius: "var(--radius-card)" }}
+              className="glass-card flex flex-col gap-8 p-8 md:flex-row md:items-end md:justify-between md:gap-12"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -168,8 +167,7 @@ export default async function AboutPage() {
             {skillGroups.map((group) => (
               <div
                 key={group.titleKey}
-                className="flex flex-col gap-5 bg-surface-container-lowest p-8"
-                style={{ borderRadius: "var(--radius-card)" }}
+                className="glass-card flex flex-col gap-5 p-8"
               >
                 <h3 className="font-display text-headline-md text-primary">
                   {t(group.titleKey)}

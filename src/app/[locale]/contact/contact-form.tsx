@@ -17,7 +17,7 @@ export function ContactForm() {
 
   if (state.status === "success") {
     return (
-      <div className="border border-outline-variant bg-surface-container-lowest p-8">
+      <div className="glass-card p-8">
         <p className="text-body-lg text-on-surface">{t("success")}</p>
       </div>
     );
@@ -35,7 +35,7 @@ export function ContactForm() {
           type="text"
           required
           placeholder={t("namePlaceholder")}
-          className="border-b border-outline-variant bg-transparent py-3 text-body-md text-on-surface outline-none transition-colors"
+          className="rounded-xl border border-outline-variant bg-surface-container-low px-4 py-3 text-body-md text-on-surface outline-none transition-colors focus:border-secondary"
         />
       </div>
 
@@ -52,7 +52,7 @@ export function ContactForm() {
           type="email"
           required
           placeholder={t("emailPlaceholder")}
-          className="border-b border-outline-variant bg-transparent py-3 text-body-md text-on-surface outline-none transition-colors"
+          className="rounded-xl border border-outline-variant bg-surface-container-low px-4 py-3 text-body-md text-on-surface outline-none transition-colors focus:border-secondary"
         />
       </div>
 
@@ -69,14 +69,14 @@ export function ContactForm() {
           required
           rows={4}
           placeholder={t("messagePlaceholder")}
-          className="resize-none border-b border-outline-variant bg-transparent py-3 text-body-md text-on-surface outline-none transition-colors"
+          className="resize-none rounded-xl border border-outline-variant bg-surface-container-low px-4 py-3 text-body-md text-on-surface outline-none transition-colors focus:border-secondary"
         />
       </div>
 
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex w-fit items-center gap-2 bg-primary px-7 py-3 text-label-md text-on-primary transition-opacity hover:opacity-85 disabled:opacity-60"
+        className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-7 py-3 text-label-md text-on-primary transition-transform hover:-translate-y-0.5 disabled:opacity-60"
       >
         {pending ? t("submitting") : t("submit")}
         <Send className="h-4 w-4" strokeWidth={1.5} />

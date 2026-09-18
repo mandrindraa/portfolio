@@ -21,7 +21,7 @@ export default async function ProjectsPage() {
 
   return (
     <>
-      <section className="container-max px-page mx-auto flex flex-col gap-8 pb-20 pt-20 md:pt-28">
+      <section className="glass-panel container-max px-page mx-auto flex flex-col gap-8 px-6 pb-20 pt-14 md:px-14 md:pt-20">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl leading-[1.1] text-primary md:text-display">
           {t("title")}
@@ -37,8 +37,8 @@ export default async function ProjectsPage() {
         ))}
       </section>
 
-      <section className="bg-surface-container-low py-24">
-        <div className="container-max px-page mx-auto flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+      <section className="py-24">
+        <div className="glass-panel container-max px-page mx-auto flex flex-col items-start gap-8 px-8 py-10 md:flex-row md:items-center md:justify-between md:px-12">
           <div className="flex flex-col gap-4">
             <h2 className="font-display text-headline-lg text-primary">
               {t("ctaTitle")}
@@ -50,14 +50,14 @@ export default async function ProjectsPage() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-primary px-7 py-3 text-label-md text-on-primary transition-opacity hover:opacity-85"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-label-md text-on-primary transition-transform hover:-translate-y-0.5"
             >
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 border border-outline px-7 py-3 text-label-md text-on-surface transition-colors hover:border-on-surface"
+                className="inline-flex items-center gap-2 rounded-full border border-outline px-7 py-3 text-label-md text-on-surface transition-colors hover:border-on-surface"
             >
               {t("ctaSecondary")}
             </Link>
