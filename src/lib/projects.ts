@@ -15,7 +15,7 @@ export interface Project {
   /** Grid span on the home "Selected Systems" bento (out of 12 cols) */
   homeSpan: number;
   featured?: boolean;
-  year: string;
+  year?: string;
   category: { en: string; fr: string };
   title: { en: string; fr: string };
   summary: { en: string; fr: string };
@@ -78,7 +78,7 @@ export const projects: Project[] = [
       en: "An open-source Python terminal UI that converts natural-language requests into shell commands, with a provider layer that switches between OpenAI and local Ollama models through environment variables.",
       fr: "Une interface terminal Python open source qui convertit des demandes en langage naturel en commandes shell, avec une couche de providers qui bascule entre OpenAI et des mod\u00e8les Ollama locaux via des variables d'environnement.",
     },
-    stack: ["Python", "OpenAI API", "Ollama", "TUI"],
+    stack: ["Python", "OpenAI API", "Ollama", "Pytest", "Shell", "TUI"],
     href: `${siteConfig.github}/llm2sh`,
     status: { en: "Open source", fr: "Open source" },
   },
@@ -98,10 +98,10 @@ export const projects: Project[] = [
       fr: "Une application de gestion scolaire avec pointage QR et notation malgache sur 20.",
     },
     description: {
-      en: "A school management platform on the Next.js App Router with Prisma and NextAuth, featuring a surveillant dashboard, a teacher validation workflow, QR-code attendance, Malagasy /20 grading, and generated PDF report cards.",
-      fr: "Une plateforme de gestion scolaire sur Next.js App Router avec Prisma et NextAuth\u202f: tableau de bord surveillant, workflow de validation enseignant, pointage par QR code, notation malgache sur 20 et bulletins PDF g\u00e9n\u00e9r\u00e9s automatiquement.",
+      en: "A school management platform built with Next.js, NextAuth, Prisma, PostgreSQL and Docker. It includes a surveillant dashboard, teacher validation workflow, QR-code attendance, Malagasy /20 grading, generated PDF report cards, and theme and language switching.",
+      fr: "Une plateforme de gestion scolaire construite avec Next.js, NextAuth, Prisma, PostgreSQL et Docker. Elle comprend un tableau de bord surveillant, un workflow de validation enseignant, le pointage par QR code, la notation malgache sur 20, des bulletins PDF g\u00e9n\u00e9r\u00e9s automatiquement et le changement de th\u00e8me et de langue.",
     },
-    stack: ["Next.js", "Prisma", "NextAuth", "TypeScript", "Tailwind CSS"],
+    stack: ["Next.js", "NextAuth", "PostgreSQL", "Prisma", "Docker"],
     status: { en: "Shipped", fr: "Livr\u00e9" },
   },
   {
@@ -167,6 +167,46 @@ export const projects: Project[] = [
     },
     stack: ["Binary Exploitation", "Forensics", "Networking", "Steganography"],
     status: { en: "CIRT-MDG, June 2026", fr: "CIRT-MDG, juin 2026" },
+  },
+  {
+    slug: "educplus-backend",
+    glyph: "grid",
+    homeSpan: 6,
+    category: {
+      en: "Backend / Education",
+      fr: "Backend / Éducation",
+    },
+    title: { en: "EducPlus Backend", fr: "Backend EducPlus" },
+    summary: {
+      en: "A Go REST API for education, with JWT authentication and email notifications.",
+      fr: "Une API REST en Go pour l'éducation, avec authentification JWT et notifications par e-mail.",
+    },
+    description: {
+      en: "A Go REST API built with Gin, GORM and PostgreSQL for an education platform. It includes access and refresh JWTs, bcrypt password hashing, event management, protected routes, and SMTP email notifications for subscribers.",
+      fr: "Une API REST en Go, construite avec Gin, GORM et PostgreSQL pour une plateforme éducative. Elle comprend des jetons JWT d'accès et de renouvellement, le hachage des mots de passe avec bcrypt, la gestion d'événements, des routes protégées et des notifications SMTP par e-mail pour les abonnés.",
+    },
+    stack: ["Go", "Gin", "GORM", "PostgreSQL", "JWT"],
+    status: { en: "GitHub project", fr: "Projet GitHub" },
+  },
+  {
+    slug: "task-tracker-cli",
+    glyph: "terminal",
+    homeSpan: 6,
+    category: {
+      en: "Developer Tooling / CLI",
+      fr: "Outil développeur / CLI",
+    },
+    title: { en: "Task Tracker CLI", fr: "CLI de suivi des tâches" },
+    summary: {
+      en: "A Go command-line task manager with SQLite persistence.",
+      fr: "Un gestionnaire de tâches en ligne de commande en Go, avec persistance SQLite.",
+    },
+    description: {
+      en: "A command-line task manager built with Go, Cobra and SQLite, supporting task creation, deletion, status updates, and listing.",
+      fr: "Un gestionnaire de tâches en ligne de commande, construit avec Go, Cobra et SQLite, permettant de créer et supprimer des tâches, modifier leur statut et les lister.",
+    },
+    stack: ["Go", "Cobra", "SQLite"],
+    status: { en: "GitHub project", fr: "Projet GitHub" },
   },
 ];
 

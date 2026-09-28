@@ -68,30 +68,24 @@
   "about": {
     "eyebrow": "The Engineer Behind the Systems",
     "headline": "Driven by logic, defined by <i>rigor</i>.",
-    "introTitle": "M1 Computer science student building production systems on the side, not just for class.",
-    "bioP1": "I'm an M1 Computer science student on the MISA track at the University of Antananarivo, with a fullstack profile centered on backend engineering — NestJS, FastAPI, Next.js, PostgreSQL and Docker, wired together with CI/CD.",
-    "bioP2": "My bachelor's focused on networking — TCP/IP, Linux, packet analysis, so I've been filling that gap deliberately: self-studying algorithms, graph theory and complexity analysis to prepare for research-track ambitions at M2 and beyond.",
-    "bioP3": "Outside coursework, I compete in CTF challenges, play chess, and build in the open — from a full \u201cstudent OS\u201d monorepo to a CLI that turns plain language into shell commands.",
+    "introTitle": "Full-stack developer and M1 computer science student, building production systems across web and backend.",
+    "bioP1": "I'm pursuing a Master's 1 in Computer Science and Technology on the MISA track at the University of Antananarivo, which I began in January 2026. I completed a Bachelor's in Systems and Network Administration there from January 2023 to December 2025.",
+    "bioP2": "My professional work spans backend and full-stack development: a NestJS market-management API for the Commune Urbaine d’Antananarivo, followed by React and Strapi v5 publishing features for Prodigy's Digital Governance Unit. I work across authentication, asynchronous jobs, caching, localized data, media workflows, and application security.",
+    "bioP3": "My personal projects include Masterclass, an LLM-assisted shell CLI, Go APIs, and developer tools. I value clear interfaces, dependable data flows, and testing the behavior that matters.",
     "experienceEyebrow": "Experience",
     "experienceTitle": "Work shaped by real systems.",
     "experience": [
       {
-        "period": "2025 — Present",
-        "role": "Independent Software Developer",
-        "company": "Personal products & open source",
-        "body": "Building and shipping full-stack products across web, mobile and backend surfaces, with a focus on reliable APIs, async data flows and production-ready infrastructure."
+        "period": "Apr 2026 — Jun 2026",
+        "role": "Full-Stack Developer",
+        "company": "Digital Governance Unit, Prodigy · Antananarivo",
+        "body": "Built the publications module for a React / Strapi v5 application using feature-based architecture and atomic design. Added category filtering, debounced search, locale-aware TanStack Query data fetching, react-i18next localization, Strapi email lifecycle hooks, Cloudflare Turnstile, and gallery, video, and downloadable-media flows."
       },
       {
-        "period": "2025",
-        "role": "Contract Software Developer",
-        "company": "Client engagements",
-        "body": "Delivered backend and platform work for education and media products, including production debugging, security hardening, CI/CD and deployment workflows."
-      },
-      {
-        "period": "2025",
-        "role": "Developer",
-        "company": "IOMAD LMS contractor team",
-        "body": "Contributed to a multi-tenant Moodle LMS through plugin management, Git Flow collaboration and GitHub Actions pipelines."
+        "period": "Jun 2025 — Jan 2026",
+        "role": "Backend Developer",
+        "company": "Commune Urbaine d’Antananarivo · Madagascar",
+        "body": "Designed and built the NestJS backend for Antananarivo's communal market management platform, exposing more than 15 Swagger-documented REST endpoints. Implemented JWT authentication with OTP verification, asynchronous jobs with BullMQ, Redis caching, and resolved CORS issues for the Cloudflare Tunnel deployment."
       }
     ],
     "certificationsEyebrow": "Credentials",
@@ -109,8 +103,10 @@
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Core Skills & Technologies",
     "skillsCol1Title": "Software Engineering",
-    "skillsCol2Title": "DevOps & Infrastructure",
-    "skillsCol3Title": "Tools & Methodology",
+    "skillsCol2Title": "Frameworks & Libraries",
+    "skillsCol3Title": "Databases",
+    "skillsCol4Title": "Tools & DevOps",
+    "skillsCol5Title": "Testing",
     "philosophyQuote": "Good engineering starts with understanding the system, not just shipping the feature.",
     "philosophyBody": "I'd rather spend an extra hour reading the error than an extra week debugging in production. Simplicity, tested assumptions, and a habit of learning the tool before reaching for it — that's the whole method.",
     "ctaTitle": "Looking for a collaboration?",

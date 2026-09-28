@@ -68,30 +68,24 @@
   "about": {
     "eyebrow": "L'ing\u00e9nieur derri\u00e8re les syst\u00e8mes",
     "headline": "Guid\u00e9 par la logique, d\u00e9fini par la <i>rigueur</i>.",
-    "introTitle": "\u00c9tudiant en M1 Informatique qui construit des syst\u00e8mes en production, pas seulement pour les cours.",
-    "bioP1": "Je suis \u00e9tudiant en M1 Informatique, parcours MISA, \u00e0 l'Universit\u00e9 d'Antananarivo, avec un profil full-stack centr\u00e9 sur l'ing\u00e9nierie backend — NestJS, FastAPI, Next.js, PostgreSQL et Docker, reli\u00e9s par du CI/CD.",
-    "bioP2": "Ma licence \u00e9tait orient\u00e9e r\u00e9seaux — TCP/IP, Linux, analyse de paquets. Je comble donc cet \u00e9cart d\u00e9lib\u00e9r\u00e9ment\u202f: algorithmes, th\u00e9orie des graphes et analyse de complexit\u00e9 en autodidacte, en pr\u00e9paration d'ambitions orient\u00e9es recherche en M2 et au-del\u00e0.",
-    "bioP3": "En dehors des cours, je participe \u00e0 des CTF, je joue aux \u00e9checs, et je construis en public \u2014 d'un monorepo \u00ab\u202fOS \u00e9tudiant\u202f\u00bb complet \u00e0 un CLI qui traduit le langage naturel en commandes shell.",
+    "introTitle": "Développeur full-stack et étudiant en M1 Informatique, je construis des systèmes en production pour le web et le backend.",
+    "bioP1": "Je prépare un Master 1 en Informatique et Technologie, parcours MISA, à l'Université d'Antananarivo depuis janvier 2026. J'y ai obtenu une licence en Administration Systèmes et Réseaux, de janvier 2023 à décembre 2025.",
+    "bioP2": "Mon expérience couvre le développement backend et full-stack : une API NestJS de gestion du marché communal pour la Commune Urbaine d'Antananarivo, puis des fonctionnalités de publication en React et Strapi v5 pour l'Unité de Gouvernance Digitale de Prodigy. J'interviens sur l'authentification, les tâches asynchrones, le cache, les données localisées, les médias et la sécurité applicative.",
+    "bioP3": "Mes projets personnels incluent Masterclass, un CLI shell assisté par LLM, des API Go et des outils développeur. Je privilégie des interfaces claires, des flux de données fiables et des tests ciblés sur les comportements importants.",
     "experienceEyebrow": "Expérience",
     "experienceTitle": "Un parcours façonné par des systèmes réels.",
     "experience": [
       {
-        "period": "2025 — Aujourd'hui",
-        "role": "Développeur logiciel indépendant",
-        "company": "Produits personnels & open source",
-        "body": "Conception et livraison de produits full-stack web, mobile et backend, avec une attention particulière portée aux API fiables, aux flux de données asynchrones et à une infrastructure prête pour la production."
+        "period": "Avr. 2026 — Juin 2026",
+        "role": "Développeur Fullstack",
+        "company": "Unité de Gouvernance Digitale, Prodigy · Antananarivo",
+        "body": "Développement du module de publications d'une application React / Strapi v5 avec une architecture feature-based et atomic design. Ajout du filtrage par catégorie, de la recherche avec debounce, de la récupération de données localisée avec TanStack Query, de l'interface multilingue avec react-i18next, de hooks e-mail Strapi, de Cloudflare Turnstile et de parcours médias pour galeries, vidéos et pièces jointes."
       },
       {
-        "period": "2025",
-        "role": "Développeur logiciel freelance",
-        "company": "Missions clients",
-        "body": "Réalisation de travaux backend et plateforme pour des produits éducatifs et média, notamment du debug en production, du durcissement sécurité, du CI/CD et des workflows de déploiement."
-      },
-      {
-        "period": "2025",
-        "role": "Développeur",
-        "company": "Équipe prestataire IOMAD LMS",
-        "body": "Contribution à un LMS Moodle multi-tenant via la gestion de plugins, la collaboration Git Flow et des pipelines GitHub Actions."
+        "period": "Juin 2025 — Janv. 2026",
+        "role": "Développeur Backend",
+        "company": "Commune Urbaine d'Antananarivo · Madagascar",
+        "body": "Conception et développement du backend NestJS de la plateforme de gestion du marché communal d'Antananarivo, avec plus de 15 endpoints REST documentés par Swagger. Mise en place de l'authentification JWT avec vérification OTP, des tâches asynchrones via BullMQ, d'un cache Redis et résolution de problèmes CORS sur le déploiement via Cloudflare Tunnels."
       }
     ],
     "certificationsEyebrow": "Certifications",
@@ -109,8 +103,10 @@
     "skillsEyebrow": "Expertise",
     "skillsTitle": "Comp\u00e9tences & Technologies",
     "skillsCol1Title": "Ing\u00e9nierie Logicielle",
-    "skillsCol2Title": "DevOps & Infrastructure",
-    "skillsCol3Title": "Outils & M\u00e9thodologie",
+    "skillsCol2Title": "Frameworks & Bibliothèques",
+    "skillsCol3Title": "Bases de données",
+    "skillsCol4Title": "Outils & DevOps",
+    "skillsCol5Title": "Tests",
     "philosophyQuote": "Une bonne ing\u00e9nierie commence par comprendre le syst\u00e8me, pas seulement livrer la fonctionnalit\u00e9.",
     "philosophyBody": "Je pr\u00e9f\u00e8re passer une heure de plus \u00e0 lire l'erreur qu'une semaine de plus \u00e0 d\u00e9boguer en production. Simplicit\u00e9, hypoth\u00e8ses test\u00e9es, et l'habitude d'apprendre l'outil avant de s'en servir \u2014 c'est toute la m\u00e9thode.",
     "ctaTitle": "Envie de collaborer\u202f?",

@@ -24,20 +24,44 @@ const richComponents = {
 const skillGroups = [
   {
     titleKey: "skillsCol1Title" as const,
-    items: ["TS / JS", "Python", "Next.js / React", "PostgreSQL", "MongoDB"],
+    items: ["JavaScript", "TypeScript", "Python", "Go", "SQL", "Bash"],
   },
   {
     titleKey: "skillsCol2Title" as const,
-    items: ["Docker", "CI/CD (GitHub Actions)", "IaC", "Linux"],
+    items: [
+      "Node.js",
+      "NestJS",
+      "Next.js",
+      "React",
+      "FastAPI",
+      "Gin",
+      "Prisma",
+      "Strapi CMS",
+      "TanStack Query",
+      "BullMQ",
+      "GORM",
+      "Cobra",
+    ],
   },
   {
     titleKey: "skillsCol3Title" as const,
+    items: ["PostgreSQL", "Redis", "SQLite"],
+  },
+  {
+    titleKey: "skillsCol4Title" as const,
     items: [
-      "Git & GitHub",
-      "Turborepo Monorepos",
-      "Async APIs & Testing",
-      "Agile",
+      "Linux",
+      "Git",
+      "Docker",
+      "GitHub Actions",
+      "Cloudflare Tunnels",
+      "Cloudflare Turnstile",
+      "Swagger / OpenAPI",
     ],
+  },
+  {
+    titleKey: "skillsCol5Title" as const,
+    items: ["Jest", "Pytest"],
   },
 ];
 
@@ -164,7 +188,7 @@ export default async function AboutPage() {
               {t("skillsTitle")}
             </h2>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {skillGroups.map((group) => (
               <div
                 key={group.titleKey}

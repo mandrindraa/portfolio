@@ -32,6 +32,8 @@ export function ProjectCard({
           <Image
             src={project.image}
             alt={project.title[locale]}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="h-full w-full object-cover transition-transform group-hover:scale-105"
           />
         )}
@@ -42,7 +44,8 @@ export function ProjectCard({
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between gap-4">
           <span className="text-label-caps text-secondary">
-            {project.category[locale]} &middot; {project.year}
+            {project.category[locale]}
+            {project.year && <> &middot; {project.year}</>}
           </span>
           <span className="text-label-caps text-on-surface-variant">
             {project.status[locale]}
