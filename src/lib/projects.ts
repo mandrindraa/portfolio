@@ -58,6 +58,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     status: { en: "In progress", fr: "En cours" },
+    href: `${siteConfig.github}/grind-v2`,
   },
   {
     slug: "llm2sh",
@@ -103,6 +104,7 @@ export const projects: Project[] = [
     },
     stack: ["Next.js", "NextAuth", "PostgreSQL", "Prisma", "Docker"],
     status: { en: "Shipped", fr: "Livr\u00e9" },
+    href: `${siteConfig.github}/masterclass-next`,
   },
   {
     slug: "iomad-lms",
@@ -187,6 +189,7 @@ export const projects: Project[] = [
     },
     stack: ["Go", "Gin", "GORM", "PostgreSQL", "JWT"],
     status: { en: "GitHub project", fr: "Projet GitHub" },
+    href: `${siteConfig.github}/educplus-backend`,
   },
   {
     slug: "task-tracker-cli",
@@ -207,6 +210,7 @@ export const projects: Project[] = [
     },
     stack: ["Go", "Cobra", "SQLite"],
     status: { en: "GitHub project", fr: "Projet GitHub" },
+    href: `${siteConfig.github}/task-tracker-cli`,
   },
 ];
 
