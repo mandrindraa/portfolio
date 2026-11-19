@@ -79,7 +79,7 @@
         "period": "Apr 2026 — Jun 2026",
         "role": "Full-Stack Developer",
         "company": "Digital Governance Unit, Prodigy · Antananarivo",
-        "body": "Built the publications module for a React / Strapi v5 application using feature-based architecture and atomic design. Added category filtering, debounced search, locale-aware TanStack Query data fetching, react-i18next localization, Strapi email lifecycle hooks, Cloudflare Turnstile, and gallery, video, and downloadable-media flows."
+        "body": "Built the publications, annual reports, mapping, and email-notification services for the CMIL website as part of the April–June 2026 professional alternance. Corrected and hardened contact forms and validation, prepared the video demonstration support, and contributed to the MVP presentations."
       },
       {
         "period": "Jun 2025 — Jan 2026",
@@ -91,6 +91,14 @@
     "certificationsEyebrow": "Credentials",
     "certificationsTitle": "Certified problem solving.",
     "certifications": [
+      {
+        "title": "Professional Contribution Attestation — CMIL",
+        "date": "April — June 2026",
+        "issuer": "Digital Governance Unit, Prodigy",
+        "number": "Full-Stack Developer alternance",
+        "linkLabel": "View attestation",
+        "url": "/attestation.pdf"
+      },
       {
         "title": "JavaScript Certification",
         "date": "June 18, 2026",

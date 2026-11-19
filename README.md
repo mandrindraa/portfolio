@@ -72,15 +72,9 @@ A few things are placeholders on purpose — real values are yours to decide:
   line/glow colors from the same CSS variables at runtime, so it re-tints
   itself on theme change with no extra wiring.
 
-## Known limitation in this sandbox (not in your environment)
+## Font delivery
 
-This project was built and verified in a network-restricted sandbox that
-can't reach `fonts.googleapis.com`. `npm run build` was confirmed to succeed
-there only after temporarily stubbing the two `next/font/google` calls in
-`src/app/[locale]/layout.tsx`; the real Google Fonts code is what's shipped
-in this file. Your own machine or CI/deploy environment will have normal
-internet access, so `next/font/google` will resolve immediately — just run
-`npm run build` once after `npm install` to confirm on your end too.
+Typography uses local system-font stacks (Georgia for display text and Inter/system UI for body text). This keeps production builds independent of Google Fonts or other build-time network access.
 
 ## Deploying
 
